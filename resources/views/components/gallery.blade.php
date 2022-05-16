@@ -15,27 +15,27 @@
                 </a>
             </div>
             <div class="uk-grid-margin uk-first-column">
-                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/3.jpg" style="">
+                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/3.jpg">
                     <img class="thumb-gallery" src="/images/gallery/3.jpg" alt="Our Prawedding Photo">
                 </a>
             </div>
             <div class="uk-grid-margin">
-                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/6.jpg" style="">
+                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/6.jpg">
                     <img class="thumb-gallery" src="/images/gallery/6.jpg" alt="Our Prawedding Photo">
                 </a>
             </div>
             <div class="uk-grid-margin uk-first-column">
-                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/4.jpg" style="">
+                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/4.jpg">
                     <img class="thumb-gallery" src="/images/gallery/4.jpg" alt="Our Prawedding Photo">
                 </a>
             </div>
             <div class="uk-grid-margin">
-                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/5.jpg" style="">
+                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/5.jpg">
                     <img class="thumb-gallery" src="/images/gallery/5.jpg" alt="Our Prawedding Photo">
                 </a>
             </div>
             <div class="uk-grid-margin uk-first-column">
-                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/7.jpg" style="">
+                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/7.jpg">
                     <img class="thumb-gallery" src="/images/gallery/7.jpg" alt="Our Prawedding Photo">
                 </a>
             </div>

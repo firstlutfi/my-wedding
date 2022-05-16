@@ -836,3 +836,11 @@ blockquote.love-quote:before {
     border-radius: 5px;
 }
 
+.store-badge{
+    width: 200px;
+}
+
+.uk-notification-message-primary{
+    color: rgba(139, 102, 38, 1);
+}
+
