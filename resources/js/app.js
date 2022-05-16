@@ -1,6 +1,6 @@
 require('./bootstrap');
-// const modal = UIkit.modal("#my_id");
-// modal.show();
+const modal = UIkit.modal("#my_id");
+modal.show();
 
 copyRekening = function(rekening) {
   var copyText = document.getElementById(rekening);

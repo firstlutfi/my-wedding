@@ -74,7 +74,7 @@
 
             <hr class="divider-thelast">
         </div>
-        <div id="my_id" uk-modal="" bg-close="false" class="uk-modal uk-flex" tabindex="0" esc-close="false">
+        <div id="my_id" uk-modal="" bg-close="false" class="uk-modal uk-flex uk-open" tabindex="0" esc-close="false">
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center" id="modal-envelope">
 
                 <div class="tw-mt-36 tw-text-center" style="transform: rotate(-8deg);">
