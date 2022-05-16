@@ -20,6 +20,7 @@ class CreateGuestListTable extends Migration
             $table->string('rsvp');
             $table->integer('max_attendance');
             $table->integer('number_of_attendance');
+            $table->text('comments');
             $table->timestamp('created_at');
         });
     }
