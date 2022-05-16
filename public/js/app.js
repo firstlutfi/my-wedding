@@ -2060,9 +2060,10 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // const modal = UIkit.modal("#my_id");
-// modal.show();
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+var modal = UIkit.modal("#my_id");
+modal.show();
 
 copyRekening = function copyRekening(rekening) {
   var copyText = document.getElementById(rekening);
@@ -2071,7 +2072,7 @@ copyRekening = function copyRekening(rekening) {
     message: "&#10004; Berhasil menyalin no rekening!",
     status: 'primary',
     pos: 'top-right',
-    timeout: 50000000
+    timeout: 5000
   }); //   alert(`Copied text: ${copyText.value}`)
 };
 
