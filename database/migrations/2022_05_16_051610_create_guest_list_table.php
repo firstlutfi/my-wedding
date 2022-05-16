@@ -17,7 +17,7 @@ class CreateGuestListTable extends Migration
             $table->string('invitation_code')->primary();
             $table->string('guest_name');
             $table->string('attendance_type');
-            $table->string('rsvp');
+            $table->string('rsvp')->nullable();
             $table->integer('max_attendance');
             $table->integer('number_of_attendance');
             $table->text('comments');

@@ -88,5 +88,5 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ ('js/app.js') }}"></script>
 </html>
