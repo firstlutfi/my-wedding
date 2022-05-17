@@ -4,13 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="title" content="Ervira & Lutfi Wedding">
+    <meta name="title" content="Ervira & Lutfi - The Wedding">
     <meta name="description" content="Wedding Invitation of Ervira & Lutfi">
     <meta name="keywords" content="lutfi fitroh hadi, ervira wulandari, wedding, wedding invitation">
     <meta name="author" content="Lutfi Fitroh Hadi">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5">
     <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="Ervira & Lutfi - The Wedding" />
+    <meta property="og:url" content="https://www.lutfiandvira.wedding/" />
+    <meta property="og:description" content="Wedding Invitation of Ervira & Lutfi" />
+    <meta property="og:image" content="https://www.lutfiandvira.wedding/public/images/logo.png" />
+    <meta property="og:type" content="website" />
+
+
     <title>Ervira & Lutfi - The Wedding</title>
 
     <!-- Fonts -->
