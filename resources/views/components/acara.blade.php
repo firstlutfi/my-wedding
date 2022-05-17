@@ -54,7 +54,7 @@
                                 <p class="tw-text-center tw-font-bold tw-mt-1 tw-text-md sm:tw-text-base md:tw-text-base" style="font-size: 16px !important;">Luminor Hotel Jemursari, Surabaya</p>
                                 <!-- <p style="font-size:14px; text-align:center; margin: 8px 0 0px 0;">
                                     Jl. Raya Jemursari No.206-208, Kec. Tenggilis Mejoyo, Kota Surabaya, Jawa Timur 60292 </p> -->
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.325455089946!2d112.75051435094367!3d-7.317289794693134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb1ac9b91b49%3A0x4bb2613bb1da37d1!2sLUMINOR%20Hotel!5e0!3m2!1sen!2sid!4v1652488283770!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.325455089946!2d112.75051435094367!3d-7.317289794693134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb1ac9b91b49%3A0x4bb2613bb1da37d1!2sLUMINOR%20Hotel!5e0!3m2!1sen!2sid!4v1652488283770!5m2!1sen!2sid" width="100%" height="450" style="border:2px solid rgba(139, 102, 38, .5);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <p class="tw-text-sm tw-leading-relaxed">
                                 &nbsp;
@@ -96,9 +96,6 @@
                         <div>
 
                         </div>
-                        @if ($guest->attendance_type == 'offline')
-
-                        @endif
                     </div>
                 </div>
             </div>

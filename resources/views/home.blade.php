@@ -77,13 +77,13 @@
         <div id="my_id" uk-modal="" bg-close="false" class="uk-modal uk-flex uk-open" tabindex="0" esc-close="false">
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center" id="modal-envelope">
 
-                <div class="tw-mt-36 tw-text-center" style="transform: rotate(-8deg);">
-                    <p class="uk-text-medium uk-margin-remove-bottom txt-simple">UNTUK: </p>
-                    <h2 class="tw-text-black tw-mt-4" style="line-height:1; margin-bottom:9px !important; font-size:28px;">{{ $guest->guest_name }}</h2>
+                <div class="tw-mt-20 md:tw-mt-28 tw-ml-14 tw-text-center" style="transform: rotate(-8deg);">
+                    <p class="tw-text-base uk-margin-remove-bottom txt-simple">UNTUK: </p>
+                    <h2 class="tw-text-black tw-mt-2" style="line-height:1; font-size:28px;">{{ $guest->guest_name }}</h2>
                 </div>
 
-                <div class="tw-mt-28">
-                    <button id="play-sound" class="uk-modal-close tw-bg-white tw-text-gray-600 tw-text-xs tw-tracking-widest tw-py-2 tw-px-4 tw-rounded-lg tw-w-3/5" type="button">BUKA UNDANGAN</button>
+                <div class="tw-mt-32 md:tw-mt-40">
+                    <button id="play-sound" class="uk-modal-close tw-bg-white tw-text-gray-600 tw-text-xs tw-tracking-widest tw-py-2 tw-px-4 tw-rounded-lg md:tw-w-60" type="button">BUKA UNDANGAN</button>
                 </div>
 
             </div>

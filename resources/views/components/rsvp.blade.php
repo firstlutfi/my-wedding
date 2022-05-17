@@ -1,6 +1,7 @@
 <section>
-    <div id="rsvp" class="uk-card uk-card-default uk-margin-top uk-card-body uk-align-center uk-width-1-2@m">
-        <form @submit.prevent="storeComment" id="guest_form">
+    @if ($guest->rsvp == null)
+    <div id="rsvp" class="uk-card uk-card-default uk-margin-top uk-card-body uk-align-center uk-width-2-3@m">
+        <form id="guest_form">
             <fieldset class="uk-fieldset">
                 <div class="uk-margin">
                     <div class="uk-form-label tw-text-left">Nama Tamu :</div>
@@ -35,4 +36,37 @@
             <button class="tw-bg-brown-dark tw-text-white tw-text-sm tw-w-full tw-p-2 tw-rounded-lg hover:tw-shadow-md" aria-expanded="true">RSVP</button>
         </form>
     </div>
+    @else
+    <div id="rsvp" class="uk-card uk-card-default uk-margin-top uk-card-body uk-align-center uk-width-2-3@m">
+        @if ($guest->rsvp == 'yes')
+        <div class="uk-margin-remove-bottom tw-text-8xl">
+            😊
+        </div>
+        <div class="uk-margin-remove-top">
+            <p class="tw-text-center tw-text-xl tw-text-black tw-font-bold tw-break-words">Terima kasih!</p>
+            <p class="tw-text-center tw-text-base tw-text-black tw-break-words">
+                Anda bersedia akan hadir bersama {{ $guest->number_of_attendance - 1 }} orang lainnya.
+                <br>Sampai berjumpa tanggal 30 Juli!
+            </p>
+
+        </div>
+        @else
+        <div class="uk-margin-remove-bottom tw-text-8xl">
+           😢
+        </div>
+        <div class="uk-margin-remove-top">
+            <p class="tw-text-center tw-text-xl tw-text-black tw-font-bold tw-break-words">Yah, sayang sekali...</p>
+            <p class="tw-text-center tw-text-base tw-text-black tw-break-words">
+                Tiada kesan tanpa kehadiranmu, <br>semoga kita bisa berjumpa di lain waktu.
+            </p>
+
+        </div>
+        @endif
+        <div class="uk-margin">
+            <p class="tw-text-center tw-text-sm tw-text-black tw-break-words">Ingin mengubah data reservasi?
+                <br>Silakan hubungi <a class="tw-text-brown-dark" href="https://wa.me/6281214715383?text=Hallo%20Lutfi!%20Saya%20ingin%20mengubah%20data%20reservasi%20atas%20nama%20">Lutfi</a> atau <a class="tw-text-brown-dark" href="https://wa.me/6282141002888?text=Hallo%20Vira!%20Saya%20ingin%20mengubah%20data%20reservasi%20atas%20nama%20">Vira</a>.
+            </p>
+        </div>
+    </div>
+    @endif
 </section>
