@@ -2,22 +2,35 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og: https://ogp.me/ns#">
 
 <head>
+    <!-- HTML Meta Tags -->
+    <title>Ervira & Lutfi - The Wedding</title>
+    <meta name="description" content="Wedding Invitation of Ervira & Lutfi">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta property="og:title" content="Ervira & Lutfi - The Wedding" />
-    <meta property="og:url" content="https://www.lutfiandvira.wedding/" />
-    <meta property="og:description" content="Wedding Invitation of Ervira & Lutfi" />
-    <meta property="og:image:secure_url" content="https://www.lutfiandvira.wedding/public/images/logo.png" />
-    <meta property="og:type" content="website" />
     <meta name="title" content="Ervira & Lutfi - The Wedding">
-    <meta name="description" content="Wedding Invitation of Ervira & Lutfi">
     <meta name="keywords" content="lutfi fitroh hadi, ervira wulandari, wedding, wedding invitation">
     <meta name="author" content="Lutfi Fitroh Hadi">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5">
     <meta name="format-detection" content="telephone=no">
 
-    <title>Ervira & Lutfi - The Wedding</title>
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://lutfiandvira.wedding/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ervira & Lutfi - The Wedding">
+    <meta property="og:description" content="Wedding Invitation of Ervira & Lutfi">
+    <meta property="og:image" content="https://lutfiandvira.wedding/images/logo.png">
+    <meta property="og:image:secure_url" content="https://lutfiandvira.wedding/images/logo.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="">
+    <meta property="twitter:url" content="https://lutfiandvira.wedding/">
+    <meta name="twitter:title" content="Ervira & Lutfi - The Wedding">
+    <meta name="twitter:description" content="Wedding Invitation of Ervira & Lutfi">
+    <meta name="twitter:image" content="https://lutfiandvira.wedding/images/logo.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -107,4 +120,5 @@
 @env('production')
 <script src="{{ secure_asset('js/app.js') }}"></script>
 @endenv
+
 </html>
