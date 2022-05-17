@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="title" content="Ervira & Lutfi Wedding">
-    <meta name="description" content="Landing page wedding Ervira & Lutfi">
+    <meta name="description" content="Wedding Invitation of Ervira & Lutfi">
     <meta name="keywords" content="lutfi fitroh hadi, ervira wulandari, wedding, wedding invitation">
     <meta name="author" content="Lutfi Fitroh Hadi">
     <meta name="robots" content="index, follow">
