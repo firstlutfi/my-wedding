@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -14,3 +14,6 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css')
     .postCss('resources/css/invitation-dark.css', 'public/css');
+
+// mix.combine("resources/css/*.css", "public/css/styles.css");
+// mix.combine("resources/js/*.js","public/js/scripts.js");

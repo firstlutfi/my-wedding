@@ -1,6 +1,6 @@
 <section>
     <div class="sm:tw-max-w-screen-sm md:tw-max-w-screen-md lg:tw-max-w-screen-lg tw-mx-auto tw-px-2.5 tw-pt-10 tw-pb-3">
-        <h2 class="tw-text-3xl tw-mt-3 sm:tw-text-4xl md:tw-text-5xl tw-text-brown-dark font-cookie tw-text-center uk-scrollspy-inview">
+        <h2 class="tw-text-5xl tw-mt-3 tw-text-brown-dark font-cookie tw-text-center uk-scrollspy-inview">
             Amplop Digital </h2>
         <hr class="divider">
         <div class="lg:tw-w-4/5 lg:tw-mx-auto">
@@ -24,7 +24,7 @@
         <div class="lg:tw-w-4/5 lg:tw-mx-auto">
             <p class="tw-text-center tw-mt-8 tw-mb-2 tw-text-xl">Untuk transfer beda bank tanpa biaya admin, anda dapat menggunakan aplikasi Flip.</p>
             <img src="/images/gifts/flip-logo.svg" alt="Logo Flip" class="tw-h-auto tw-mx-auto">
-            <div class="tw-grid tw-grid-cols-2 tw-gap-10">
+            <div class="tw-grid tw-grid-cols-2 tw-gap-10 sm:tw-gap-2 md:tw-gap-2">
                 <div class="store-badge tw-text-center tw-mx-auto">
                     <a href='https://play.google.com/store/apps/details?id=id.flip&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='/images/gifts/play-store-badge.png' /></a>
                 </div>

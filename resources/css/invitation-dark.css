@@ -380,7 +380,7 @@ blockquote {
 .uk-select:focus,
 .uk-textarea:focus {
     outline: 0;
-    background-color: #e3e3e3;
+    /* background-color: #e3e3e3; */
     color: var(--txt-color-1);
 }
 
@@ -840,4 +840,33 @@ blockquote.love-quote:before {
 
 .uk-notification-message-primary{
     color: rgba(139, 102, 38, 1);
+}
+
+#modal-envelope{
+    background: transparent;
+    background-image: url('/images/amplop-2.png');
+    padding:20px 15px 60px 15px;
+    background-position: center;
+    background-repeat: unset;
+    background-size: cover; 
+    border-radius:16px;  
+    height: 400px;
+}
+
+.guestbook-form{
+    border: 1px solid rgba(214, 186, 141, 1);
+}
+
+.guestbook-form:disabled {
+    cursor: not-allowed;
+    background-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133)) !important;
+}
+
+.uk-input, .uk-select, .uk-textarea {
+    background-color: unset;
+}
+
+.uk-input:focus, .uk-select:focus, .uk-textarea:focus {
+    color: #666;
+    border-color: rgba(214, 186, 141, 1);
 }

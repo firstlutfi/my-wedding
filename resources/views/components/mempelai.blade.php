@@ -13,11 +13,11 @@
             <br>teriring niat menjalankan sunnah Rasulullah ﷺ untuk membentuk rumah tangga yang sakinah, mawaddah, warahmah,
             <br>kami mohon do'a agar senantiasa diberikan kelancaran dan keberkahan.
         </p>
-        <h2 class="tw-text-3xl tw-mt-3 sm:tw-text-4xl md:tw-text-5xl tw-text-brown-dark font-cookie tw-text-center uk-scrollspy-inview">
+        <h2 class="tw-text-5xl tw-mt-3 tw-text-brown-dark font-cookie tw-text-center uk-scrollspy-inview">
             The Bride & The Groom </h2>
         <hr class="divider">
         <div class="lg:tw-w-4/5 lg:tw-mx-auto">
-            <div class="tw-grid tw-grid-flow-col tw-mx-auto">
+            <div class="tw-grid lg:tw-grid-flow-col lg:tw-auto-cols-auto sm:tw-max-cols-1 md:tw-max-cols-1 tw-mx-auto">
                 <div class="tw-text-center">
                     <div class="pw tw-mx-auto tw-mb-3"></div>
                     <h2 class="tw-pt-3 m-name tw-text-1xl sm:tw-text-lg md:tw-text-1xl lg:tw-text-4xl tw-text-brown-dark">Ervira Wulandari</h2>
@@ -25,7 +25,7 @@
                         Putri pertama dari Bpk Ir. Ermandaru <br>& Ibu Evi Yulianti, S.E
                     </p>
                 </div>
-                <div class="tw-text-center">
+                <div class="tw-text-center tw-hidden md:tw-block lg:tw-block">
                     <i class="fa-solid fa-heart heart-pulse tw-my-24"></i>
                 </div>
                 <div class="tw-text-center">

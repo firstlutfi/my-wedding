@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\GuestList;
+use App\Models\Comments;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -14,7 +15,9 @@ class HomeController extends Controller
             return abort(404, "Invalid invitation code.<br>Check for typos, or ask the bride and groom for your invitation code.");
         }
         $guest = GuestList::find($request->invitation_code);
-        return view('home', ['guest' => $guest]);
+        $comments = Comments::latest()->paginate(10);
+        $comments->withPath('/comments');
+        return view('home', ['guest' => $guest, 'comments' => $comments]);
     }
 
     public function store(Request $request)
