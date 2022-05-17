@@ -11,7 +11,11 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
-        if (!$request->has('invitation_code') || empty($request->invitation_code) || empty(GuestList::find($request->invitation_code))) {
+        if (!$request->has('invitation_code') || empty($request->invitation_code)) {
+            return view('blank');
+        }
+        
+        if (empty(GuestList::find($request->invitation_code))) {
             return abort(404, "Invalid invitation code.<br>Check for typos, or ask the bride and groom for your invitation code.");
         }
         $guest = GuestList::find($request->invitation_code);

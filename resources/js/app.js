@@ -1,6 +1,5 @@
 require("./bootstrap");
-const modal = UIkit.modal("#my_id");
-modal.show();
+
 axios.interceptors.request.use(
     function (config) {
         btn = document.getElementById(config['element']);
@@ -74,3 +73,11 @@ appendComment = function (data) {
 toggleJumlahTamu = function(){
     document.getElementById("select-attendance").value === 'yes' ? document.getElementById("jumlah-tamu").style.display = "block" : document.getElementById("jumlah-tamu").style.display = "none";
 }
+
+checkInvitationCode = function(){
+    let invitation_code = document.getElementById('input-invitation-code').value;
+    window.location.href = `/?invitation_code=${invitation_code}`;
+}
+
+const modal = UIkit.modal("#my_id");
+modal.show();
