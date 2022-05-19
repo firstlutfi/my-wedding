@@ -857,6 +857,20 @@ blockquote.love-quote:before {
     #modal-envelope {
         height: 85vmin;
     }
+
+    /* For mobile phones: */
+    .youtube-frame {
+        height: 250px;
+    }
+
+    blockquote.love-quote {
+        padding: 30px 10px 20px;
+    }
+
+    blockquote.love-quote:before {
+        left: 0px;
+        font-size: 70px;
+    }
 }
 
 .guestbook-form {
@@ -882,4 +896,38 @@ blockquote.love-quote:before {
 .uk-textarea:focus {
     color: #666;
     border-color: rgba(214, 186, 141, 1);
+}
+
+.swal2-timer-progress-bar {
+    background: rgba(139, 102, 38, 1) !important;
+}
+
+button.btn-main:disabled {
+    background: rgba(214, 186, 141, 1) !important;
+    color: #000 !important;
+    cursor: not-allowed;
+}
+
+.youtube-frame {
+    height: 400px;
+}
+
+@media (orientation: landscape) {
+    .wedding-logo {
+        height: 8vw;
+    }
+}
+
+@media (orientation: portrait) {
+    .wedding-logo {
+        height: 8vh;
+    }
+}
+
+.music-played{
+    background-image: url('/images/unmute.png');
+}
+
+.music-paused{
+    background-image: url('/images/mute.png');
 }

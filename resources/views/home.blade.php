@@ -87,9 +87,11 @@
                 @include('components.comments')
             </div>
 
-            <p class="tw-text-xs tw-text-extralight tw-text-center tw-italic text-thelast">
-                - 'the last good man'
-            </p>
+            <div id="footer" style="background: rgba(0,0,0,.05);">
+                <p class="tw-text-xs tw-text-extralight tw-text-center tw-italic text-thelast">
+                    Made with love by Lutfi
+                </p>
+            </div>
 
             <hr class="divider-thelast">
         </div>

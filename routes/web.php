@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 Route::get('comments', 'CommentsController@list');
-Route::get('guest/{invitation_code}', 'GuestBookController@getUserData');
-Route::post('comment/store', 'GuestBookController@store');
+Route::get('guest/{invitation_code}', 'GuestListController@getUserData');
+Route::post('rsvp', 'GuestListController@rsvp');
+Route::post('comments', 'CommentsController@store');
 

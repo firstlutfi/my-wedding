@@ -32,7 +32,7 @@
                     <div class="pl tw-mx-auto tw-mb-3"></div>
                     <h2 class="tw-pt-3 m-name tw-text-1xl sm:tw-text-lg md:tw-text-1xl lg:tw-text-4xl tw-text-brown-dark">Lutfi Fitroh Hadi</h2>
                     <p class="tw-text-sm lg:tw-font-semibold tw-font-normal tw-mb-5">
-                        Putra ketiga dari Bpk (Alm.) H.M. Djaeni, S.Pd <br>& Ibu Rana Yasmina Rosliany, S.P
+                        Putra ketiga dari Bpk (Alm.) Drs. Mohamad Djaeni, S.Pd <br>& Ibu Rana Yasmina Rosliany, S.P
                     </p>
                 </div>
             </div>

@@ -86,11 +86,12 @@
                             </div>
                             @else
                             <p class="tw-text-center tw-font-bold tw-mt-1 tw-text-md sm:tw-text-base md:tw-text-base" style="font-size: 16px !important;">Kota Surabaya, Jawa Timur</p>
-                            <blockquote class="tw-mt-3 tw-py-2 sidekick">
+                            <blockquote class="tw-mt-3 tw-py-2 tw-px-2 sidekick">
                                 Sehubungan dengan situasi pandemi yang belum sepenuhnya berakhir, kami memutuskan untuk membatasi jumlah tamu undangan yang hadir.
                                 Maka dari itu, kami mohon maaf yang sebesar-besarnya jika belum bisa mengundang seluruh rekan-rekan ataupun saudara/i di hari bahagia kami.
                                 <br> Tapi jangan khawatir, prosesi pernikahan kami juga bisa disaksikan melalui layanan livestream di bawah ini.
                             </blockquote>
+                            <iframe width="100%" class="youtube-frame tw-mt-5" src="https://www.youtube.com/embed/gHgX6zPu23E" title="Livestream wedding Lutfi & Vira" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="tw-mt-5"></iframe>
                             @endif
                         </div>
                         <div>

@@ -24,20 +24,20 @@ class HomeController extends Controller
         return view('home', ['guest' => $guest, 'comments' => $comments]);
     }
 
-    public function store(Request $request)
-    {
-        $invitation_code = $this->generateInvitationCode();
-        $newGuest = GuestList::create($request->only(['name', 'presence', 'person', 'comment']));
+    // public function store(Request $request)
+    // {
+    //     $invitation_code = $this->generateInvitationCode();
+    //     $newGuest = GuestList::create($request->only(['name', 'presence', 'person', 'comment']));
 
-        return $newGuest;
-    }
+    //     return $newGuest;
+    // }
 
-    public function generateInvitationCode(){
-        do {
-            $invitation_code = Str::random(5);
+    // public function generateInvitationCode(){
+    //     do {
+    //         $invitation_code = Str::random(5);
 
-        } while (GuestList::where('invitation_code', $invitation_code )->exists());
+    //     } while (GuestList::where('invitation_code', $invitation_code )->exists());
 
-        return $invitation_code;
-    }
+    //     return $invitation_code;
+    // }
 }
