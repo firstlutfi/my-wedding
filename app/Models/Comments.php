@@ -15,7 +15,7 @@ class Comments extends Model
 
     public function getCreatedAtAttribute($value)
     {
-        return Carbon::parse($value)->diffForHumans(['options' => Carbon::NO_ZERO_DIFF]);
+        return Carbon::parse($value)->diffForHumans(null, true) . ' yang lalu';
     }
 
     // public function getCommentAttribute($value)

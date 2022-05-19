@@ -853,6 +853,10 @@ blockquote.love-quote:before {
     height: 400px;
 }
 
+.youtube-frame {
+    height: 400px;
+}
+
 @media only screen and (max-width: 600px) {
     #modal-envelope {
         height: 85vmin;
@@ -906,10 +910,6 @@ button.btn-main:disabled {
     background: rgba(214, 186, 141, 1) !important;
     color: #000 !important;
     cursor: not-allowed;
-}
-
-.youtube-frame {
-    height: 400px;
 }
 
 @media (orientation: landscape) {

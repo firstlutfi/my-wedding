@@ -7,28 +7,28 @@
 
         <div class="uk-grid-small uk-flex-center uk-child-width-auto yn-anim uk-grid uk-countdown uk-scrollspy-inview" uk-grid uk-countdown="date: 2022-07-30T09:00:00+07:00">
             <div>
-                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark sm:tw-text-center uk-countdown-number uk-countdown-days">
+                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark tw-text-center uk-countdown-number uk-countdown-days">
                 </div>
                 <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Hari</div>
             </div>
             <div class="uk-countdown-separator"></div>
             <div>
-                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark sm:tw-text-center uk-countdown-number uk-countdown-hours">
+                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark tw-text-center uk-countdown-number uk-countdown-hours">
                 </div>
                 <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Jam</div>
             </div>
             <div class="uk-countdown-separator"></div>
             <div>
-                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark sm:tw-text-center uk-countdown-number uk-countdown-minutes">
+                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark tw-text-center uk-countdown-number uk-countdown-minutes">
                 </div>
                 <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Menit</div>
             </div>
             <div class="uk-countdown-separator"></div>
             <div>
-                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark sm:tw-text-center uk-countdown-number uk-countdown-seconds">
+                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark tw-text-center uk-countdown-number uk-countdown-seconds">
                 </div>
                 <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Detik</div>
