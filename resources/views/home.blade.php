@@ -55,7 +55,7 @@
     </style>
 </head>
 
-<body uk-scrollspy="target: .yn-anim; cls: uk-animation-fade; delay: 350">
+<body>
     <div id="root">
         <div>
 
@@ -95,6 +95,7 @@
 
             <hr class="divider-thelast">
         </div>
+        <a href=""></a>
         <div id="my_id" uk-modal="" bg-close="false" class="uk-modal uk-flex uk-open" tabindex="0" esc-close="false">
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center" id="modal-envelope">
 

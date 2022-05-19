@@ -10,12 +10,12 @@
                     <input type="hidden" id="comment-code" value="{{ $guest->invitation_code }}">
                     <div class="uk-margin uk-margin-remove-top">
                         <div class="uk-form-label">Nama :</div>
-                        <input type="text" id="comment-name" value="{{ $guest->guest_name }}" class="guestbook-form" required {{ $guest->enable_edit_name == 1 ? '' : 'disabled' }}>
+                        <input type="text" id="comment-name" value="{{ $guest->guest_name }}" class="guestbook-form" maxlength="20" required {{ $guest->enable_edit_name == 1 ? '' : 'disabled' }}>
                     </div>
 
                     <div class="uk-margin" style="margin-bottom: 0px">
                         <div class="uk-form-label">Isi Ucapan :</div>
-                        <textarea id="comment-text" class="guestbook-form" rows="5" placeholder="Ucapan Selamat" required></textarea>
+                        <textarea id="comment-text" class="guestbook-form" rows="5" placeholder="Ucapan Selamat (maksimal 200 karakter)" maxlength="200" required></textarea>
                     </div>
                 </fieldset>
 

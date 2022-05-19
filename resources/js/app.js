@@ -259,3 +259,16 @@ UIkit.util.on("#my_id", "hidden", function () {
     const audio = document.getElementById("music");
     audio.play();
 });
+
+UIkit.util.on("#my_id", "show", function () {
+    previousScrollY = window.scrollY;
+    $('html').addClass('modal-open').css({
+        marginTop: -previousScrollY,
+        overflow: 'hidden',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+        position: 'fixed',
+    });
+});

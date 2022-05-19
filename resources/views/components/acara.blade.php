@@ -5,7 +5,7 @@
         <hr class="divider">
         <p class="tw-text-center tw-mt-2 tw-mb-8 tw-text-4xl">Sabtu, 30 Juli 2022</p>
 
-        <div class="uk-grid-small uk-flex-center uk-child-width-auto yn-anim uk-grid uk-countdown uk-scrollspy-inview" uk-grid uk-countdown="date: 2022-07-30T09:00:00+07:00">
+        <div class="uk-grid-small uk-flex-center uk-child-width-auto uk-grid uk-countdown uk-scrollspy-inview" uk-grid uk-countdown="date: 2022-07-30T09:00:00+07:00">
             <div>
                 <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark tw-text-center uk-countdown-number uk-countdown-days">
                 </div>

@@ -30,7 +30,7 @@
 
                 <div class="uk-margin">
                     <div class="uk-form-label tw-text-left">Beri Ucapan Untuk Kedua Mempelai :</div>
-                    <textarea class="uk-textarea guestbook-form" rows="5" placeholder="Ucapan Selamat" id="comment-box" required></textarea>
+                    <textarea class="uk-textarea guestbook-form" rows="5" placeholder="Ucapan Selamat (maksimal 200 karakter)" id="comment-box" maxlength="200" required></textarea>
                 </div>
 
             </fieldset>

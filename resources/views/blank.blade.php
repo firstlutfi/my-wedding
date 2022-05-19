@@ -55,7 +55,7 @@
     </style>
 </head>
 
-<body uk-scrollspy="target: .yn-anim; cls: uk-animation-fade; delay: 350">
+<body>
     <div id="root" class="uk-container uk-container-small">
         <div class="uk-card uk-card-default uk-margin-top uk-card-body uk-align-center uk-width-2-3@m">
             <form>
