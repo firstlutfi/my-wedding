@@ -18,7 +18,7 @@ class GuestList extends Model
 
     public    $hidden     = [];
     public    $guarded    = [];
-    public    $timestamps = false;
+    public    $timestamps = true;
     public    $incrementing = false;
 
     public function getCreatedAtAttribute($value)

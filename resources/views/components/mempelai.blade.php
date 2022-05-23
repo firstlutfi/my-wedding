@@ -4,11 +4,7 @@
         <img src="/images/bismillah.png" class="tw-mx-auto tw-mb-3 tw-sm:mb-5" alt="Bismillah" width="300">
 
         <p class="tw-text-sm lg:tw-font-semibold tw-font-normal tw-text-center w-py-2">Assalamualaikum warahmatullahi wabarakatuh</p>
-        <p class="tw-text-sm tw-leading-relaxed lg:tw-font-semibold tw-font-normal tw-text-justify md:tw-text-center lg:tw-hidden tw-py-4 tw-mb-10">
-            Dengan memohon rahmat dan ridho-Mu Ya
-            Allah, Kami bermaksud mengadakan acara pernikahan putra dan putri kami.
-        </p>
-        <p class="tw-hidden lg:tw-block tw-leading-relaxed tw-text-sm lg:tw-font-semibold tw-font-normal tw-text-justify md:tw-text-center tw-py-4 tw-mb-4">
+        <p class="lg:tw-block tw-leading-relaxed tw-text-sm lg:tw-font-semibold tw-font-normal tw-text-justify md:tw-text-center tw-py-4 tw-mb-4">
             Dengan memohon rahmat dan ridho Allah SWT,
             <br>teriring niat menjalankan sunnah Rasulullah ﷺ untuk membentuk rumah tangga yang sakinah, mawaddah, warahmah,
             <br>kami mohon do'a agar senantiasa diberikan kelancaran dan keberkahan.
@@ -22,7 +18,7 @@
                     <div class="pw tw-mx-auto tw-mb-3"></div>
                     <h2 class="tw-pt-3 m-name tw-text-1xl sm:tw-text-lg md:tw-text-1xl lg:tw-text-4xl tw-text-brown-dark">Ervira Wulandari</h2>
                     <p class="tw-text-sm lg:tw-font-semibold tw-font-normal tw-mb-5">
-                        Putri pertama dari Bpk Ir. Ermandaru <br>& Ibu Evi Yulianti, S.E
+                        Putri pertama Bapak Ir. Ermandaru <br>& Ibu Evi Yulianti, S.E
                     </p>
                 </div>
                 <div class="tw-text-center tw-hidden md:tw-block lg:tw-block">
@@ -32,7 +28,7 @@
                     <div class="pl tw-mx-auto tw-mb-3"></div>
                     <h2 class="tw-pt-3 m-name tw-text-1xl sm:tw-text-lg md:tw-text-1xl lg:tw-text-4xl tw-text-brown-dark">Lutfi Fitroh Hadi</h2>
                     <p class="tw-text-sm lg:tw-font-semibold tw-font-normal tw-mb-5">
-                        Putra ketiga dari Bpk (Alm.) Drs. Mohamad Djaeni, S.Pd <br>& Ibu Rana Yasmina Rosliany, S.P
+                        Putra ketiga Bapak (Alm.) Drs. Mohamad Djaeni<br>& Ibu Rana Yasmina Rosliany, S.P
                     </p>
                 </div>
             </div>

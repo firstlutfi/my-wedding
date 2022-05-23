@@ -15,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 Route::get('comments', 'CommentsController@list');
-Route::get('guest/{invitation_code}', 'GuestListController@getUserData');
 Route::post('rsvp', 'GuestListController@rsvp');
 Route::post('comments', 'CommentsController@store');
+Route::get('/guest-list', 'DashboardController@getGuestList')->name('guests.index');
 
+Auth::routes();
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('guest/{invitation_code}', 'GuestListController@getUserData');
+Route::patch('guest/{invitation_code}', 'GuestListController@updateUserData');

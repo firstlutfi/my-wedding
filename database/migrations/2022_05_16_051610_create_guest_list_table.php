@@ -23,6 +23,7 @@ class CreateGuestListTable extends Migration
             $table->integer('number_of_attendance')->default(0);
             $table->enum('enable_edit_name', [0,1])->default(0);
             $table->enum('have_comments', [0,1])->default(0);
+            $table->timestamps();
         });
     }
 

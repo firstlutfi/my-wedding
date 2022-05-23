@@ -39,12 +39,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     @env('local')
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}">
     <link rel="stylesheet" href="{{ asset('css/invitation-dark.css') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/images/logo.ico') }}" />
     @endenv
     @env('production')
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/tailwind.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/invitation-dark.css') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ secure_asset('/images/logo.ico') }}" />
     @endenv
