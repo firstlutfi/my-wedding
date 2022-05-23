@@ -36,7 +36,7 @@
             </fieldset>
 
             <div class="tw-h-4"></div>
-            <button class="btn-main tw-bg-brown-dark tw-text-white tw-text-sm tw-w-full tw-p-2 tw-rounded-lg hover:tw-shadow-md" id="btn-rsvp" type="submit" onclick="event.preventDefault();submitRsvp('{{$guest->invitation_code}}');" aria-expanded="true">RSVP</button>
+            <button class="btn-main bg-gold tw-text-black tw-text-sm tw-w-full tw-p-2 tw-rounded-lg hover:tw-shadow-md" id="btn-rsvp" type="submit" onclick="event.preventDefault();submitRsvp('{{$guest->invitation_code}}');" aria-expanded="true">RSVP</button>
         </form>
     </div>
     @else
@@ -71,7 +71,7 @@
         @endif
         <div class="uk-margin">
             <p class="tw-text-center tw-text-sm tw-text-black tw-break-words">Ingin mengubah data reservasi?
-                <br>Silakan hubungi <a class="tw-text-brown-dark" target="_blank" href="https://wa.me/6281214715383?text=Hallo Lutfi! Saya ingin mengubah data reservasi atas nama {{ $guest->guest_name }}">Lutfi</a> atau <a class="tw-text-brown-dark" target="_blank" href="https://wa.me/6282141002888?text=Hallo Vira! Saya ingin mengubah data reservasi atas nama {{ $guest->guest_name }}">Vira</a>.
+                <br>Silakan hubungi <a class="text-gold" target="_blank" href="https://wa.me/6281214715383?text=Hallo Lutfi! Saya ingin mengubah data reservasi atas nama {{ $guest->guest_name }}">Lutfi</a> atau <a class="text-gold" target="_blank" href="https://wa.me/6282141002888?text=Hallo Vira! Saya ingin mengubah data reservasi atas nama {{ $guest->guest_name }}">Vira</a>.
             </p>
         </div>
     </div>

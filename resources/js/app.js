@@ -59,8 +59,8 @@ loadMore = function () {
 appendComment = function (data) {
     let temp = `<div class="tw-w-full tw-py-5 tw-px-4 tw-h-auto tw-mb-4 tw-rounded-lg uk-animation-slide-right" style="background: rgba(0,0,0,.05);">
     <div class="tw-flex tw-space-x-2 sm:tw-space-x-4">
-        <div class="tw-flex-none tw-h-12 tw-w-12 tw-rounded-full tw-bg-brown-dark tw-relative">
-            <span class="tw-font-extrabold tw-text-white tw-text-center tw-text-1xl tw-p-2 tw-mt-0.5 tw-absolute tw-top-0 tw-left-0 tw-right-0">
+        <div class="tw-flex-none tw-h-12 tw-w-12 tw-rounded-full bg-gold tw-relative">
+            <span class="tw-font-extrabold tw-text-black tw-text-center tw-text-1xl tw-p-2 tw-mt-0.5 tw-absolute tw-top-0 tw-left-0 tw-right-0">
                 ${setNameInitial(data.comment_from)}
             </span>
         </div>
@@ -72,7 +72,7 @@ appendComment = function (data) {
                     }</p>
                 </div>
                 <div class="tw-flex-shrink-0">
-                    <p class="tw-text-brown-dark tw-text-xs tw-italic tw-mt-0.5 tw-font-light">${
+                    <p class="text-gold tw-text-xs tw-italic tw-mt-0.5 tw-font-light">${
                         data.created_at
                     }</p>
                 </div>
@@ -120,7 +120,7 @@ showRsvpResponse = function (rsvp) {
 
     let bottomInfo = `<div class="uk-margin uk-animation-scale-up">
 <p class="tw-text-center tw-text-sm tw-text-black tw-break-words">Ingin mengubah data reservasi?
-    <br>Silakan hubungi <a class="tw-text-brown-dark" target="_blank" href="https://wa.me/6281214715383?text=Hallo Lutfi! Saya ingin mengubah data reservasi atas nama ${rsvp.guest_name}">Lutfi</a> atau <a class="tw-text-brown-dark" target="_blank" href="https://wa.me/6282141002888?text=Hallo Vira! Saya ingin mengubah data reservasi atas nama ${rsvp.guest_name}">Vira</a>.
+    <br>Silakan hubungi <a class="text-gold" target="_blank" href="https://wa.me/6281214715383?text=Hallo Lutfi! Saya ingin mengubah data reservasi atas nama ${rsvp.guest_name}">Lutfi</a> atau <a class="text-gold" target="_blank" href="https://wa.me/6282141002888?text=Hallo Vira! Saya ingin mengubah data reservasi atas nama ${rsvp.guest_name}">Vira</a>.
 </p>
 </div>`;
     append += rsvp.rsvp === "yes" ? yes : no;

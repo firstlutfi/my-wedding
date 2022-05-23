@@ -1,6 +1,6 @@
 <section>
     <div class="sm:tw-max-w-screen-sm md:tw-max-w-screen-md lg:tw-max-w-screen-lg tw-mx-auto tw-px-2.5 tw-pt-10 tw-pb-3">
-        <h2 class="tw-text-5xl tw-mt-3 tw-text-brown-dark font-cookie tw-text-center tw-pt-10 uk-scrollspy-inview">
+        <h2 class="tw-text-5xl tw-mt-3 text-gold font-cookie tw-text-center tw-pt-10 uk-scrollspy-inview">
             Gallery </h2>
         <hr class="divider">
         <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid" uk-grid="" uk-lightbox="animation: slide">

@@ -9,16 +9,16 @@
             <br>teriring niat menjalankan sunnah Rasulullah ﷺ untuk membentuk rumah tangga yang sakinah, mawaddah, warahmah,
             <br>kami mohon do'a agar senantiasa diberikan kelancaran dan keberkahan.
         </p>
-        <h2 class="tw-text-5xl tw-mt-3 tw-text-brown-dark font-cookie tw-text-center uk-scrollspy-inview">
+        <h2 class="tw-text-5xl tw-mt-3 text-gold font-cookie tw-text-center uk-scrollspy-inview">
             The Bride & The Groom </h2>
         <hr class="divider">
         <div class="lg:tw-w-4/5 lg:tw-mx-auto">
-            <div class="tw-grid lg:tw-grid-flow-col lg:tw-auto-cols-auto sm:tw-max-cols-1 md:tw-max-cols-1 tw-mx-auto">
+            <div class="tw-grid md:tw-grid-flow-col md:tw-auto-cols-auto sm:tw-max-cols-1 md:tw-max-cols-1 tw-mx-auto">
                 <div class="tw-text-center">
                     <div class="pw tw-mx-auto tw-mb-3"></div>
-                    <h2 class="tw-pt-3 m-name tw-text-1xl sm:tw-text-lg md:tw-text-1xl lg:tw-text-4xl tw-text-brown-dark">Ervira Wulandari</h2>
+                    <h2 class="tw-pt-3 m-name tw-text-1xl sm:tw-text-lg md:tw-text-1xl lg:tw-text-4xl text-gold">Ervira Wulandari</h2>
                     <p class="tw-text-sm lg:tw-font-semibold tw-font-normal tw-mb-5">
-                        Putri pertama Bapak Ir. Ermandaru <br>& Ibu Evi Yulianti, S.E
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putri pertama Bapak Ir. Ermandaru&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>& Ibu Evi Yulianti, S.E
                     </p>
                 </div>
                 <div class="tw-text-center tw-hidden md:tw-block lg:tw-block">
@@ -26,7 +26,7 @@
                 </div>
                 <div class="tw-text-center">
                     <div class="pl tw-mx-auto tw-mb-3"></div>
-                    <h2 class="tw-pt-3 m-name tw-text-1xl sm:tw-text-lg md:tw-text-1xl lg:tw-text-4xl tw-text-brown-dark">Lutfi Fitroh Hadi</h2>
+                    <h2 class="tw-pt-3 m-name tw-text-1xl sm:tw-text-lg md:tw-text-1xl lg:tw-text-4xl text-gold">Lutfi Fitroh Hadi</h2>
                     <p class="tw-text-sm lg:tw-font-semibold tw-font-normal tw-mb-5">
                         Putra ketiga Bapak (Alm.) Drs. Mohamad Djaeni<br>& Ibu Rana Yasmina Rosliany, S.P
                     </p>

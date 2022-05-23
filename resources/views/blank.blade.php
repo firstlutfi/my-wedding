@@ -65,7 +65,7 @@
                         <input type="text" class="uk-input guestbook-form" id="input-invitation-code" required>
                     </div>
                 </fieldset>
-                <button class="tw-bg-brown-dark tw-text-white tw-text-sm tw-w-full tw-p-2 tw-rounded-lg hover:tw-shadow-md" aria-expanded="true" id="check-invitation-code" onclick="event.preventDefault();checkInvitationCode();">Submit</button>
+                <button class="bg-gold tw-text-black tw-text-sm tw-w-full tw-p-2 tw-rounded-lg hover:tw-shadow-md" aria-expanded="true" id="check-invitation-code" onclick="event.preventDefault();checkInvitationCode();">Submit</button>
             </form>
         </div>
     </div>

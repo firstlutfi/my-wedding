@@ -751,7 +751,7 @@ blockquote {
     background-image: linear-gradient(
         to right,
         rgba(255, 255, 255, 0),
-        rgba(139, 102, 38, 0.75),
+        rgba(221, 169, 80, 0.75),
         rgba(255, 255, 255, 0)
     );
 }
@@ -762,7 +762,7 @@ blockquote {
 
 .heart-pulse {
     font-size: 20px;
-    color: rgba(139, 102, 38, 0.75);
+    color: rgba(221, 169, 80, 0.75);
     animation: pulse 1s ease infinite;
 }
 
@@ -779,7 +779,7 @@ blockquote.quote:before,
 blockquote.quote:after {
     font-family: FontAwesome;
     position: absolute;
-    color: rgba(139, 102, 38, 0.75);
+    color: rgba(221, 169, 80, 0.75);
     font-size: 34px;
 }
 
@@ -800,7 +800,7 @@ blockquote.EN:after {
 .sidekick {
     position: relative;
     padding-left: 1em;
-    border: 0.2em solid rgba(139, 102, 38, 0.75);
+    border: 0.2em solid rgba(221, 169, 80, 0.75);
     font-family: "Roboto", serif;
     font-size: 1em;
     line-height: 1.5em;
@@ -813,6 +813,8 @@ blockquote.love-quote {
 }
 
 blockquote.love-quote p {
+    display: block;
+    position: relative;
     font-family: "Utopia-italic";
     font-size: 2.25rem;
     font-weight: 700px;
@@ -826,11 +828,11 @@ blockquote.love-quote:before {
     top: 0;
     content: "\f10d";
     font-size: 100px;
-    color: rgba(139, 102, 38, 0.1);
+    color: rgba(221, 169, 80, .5);
 }
 
 .qr-code {
-    border: 1px solid rgba(139, 102, 38, 0.75);
+    border: 1px solid rgba(221, 169, 80, 0.75);
     border-radius: 5px;
 }
 
@@ -839,7 +841,7 @@ blockquote.love-quote:before {
 }
 
 .uk-notification-message-primary {
-    color: rgba(139, 102, 38, 1);
+    color: rgba(221, 169, 80, 1);
 }
 
 #modal-envelope {
@@ -878,7 +880,7 @@ blockquote.love-quote:before {
 }
 
 .guestbook-form {
-    border: 1px solid rgba(214, 186, 141, 1);
+    border: 1px solid rgba(221, 169, 80, 1);
 }
 
 .guestbook-form:disabled {
@@ -899,11 +901,11 @@ blockquote.love-quote:before {
 .uk-select:focus,
 .uk-textarea:focus {
     color: #666;
-    border-color: rgba(214, 186, 141, 1);
+    border-color: rgba(221, 169, 80, 1);
 }
 
 .swal2-timer-progress-bar {
-    background: rgba(139, 102, 38, 1) !important;
+    background: rgba(221, 169, 80, 1) !important;
 }
 
 button.btn-main:disabled {
@@ -930,4 +932,43 @@ button.btn-main:disabled {
 
 .music-paused{
     background-image: url('/images/mute.png');
+}
+
+@media (max-width: 768px) {
+    .cover{
+        background-image: url('/images/bg-small-device.png');
+        height: 100vh;
+    }
+
+    .position-bottom-small{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .cover{
+        background-image: url('/images/bg-new.png');
+        height: 100vh;
+    }
+
+    .position-center-large{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* --uk-position-translate-x: -50%; */
+        /* --uk-position-translate-y: -50%; */
+        transform: translate(-50%,-50%);
+        width: max-content;
+    }
+}
+
+.text-gold{
+    color: rgba(221, 169, 80, 1) !important;
+}
+
+.bg-gold{
+    background-color: rgba(221, 169, 80, 1) !important;
 }

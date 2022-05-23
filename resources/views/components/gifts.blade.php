@@ -1,6 +1,6 @@
 <section>
     <div class="sm:tw-max-w-screen-sm md:tw-max-w-screen-md lg:tw-max-w-screen-lg tw-mx-auto tw-px-2.5 tw-pt-10 tw-pb-3">
-        <h2 class="tw-text-5xl tw-mt-3 tw-text-brown-dark font-cookie tw-text-center uk-scrollspy-inview">
+        <h2 class="tw-text-5xl tw-mt-3 text-gold font-cookie tw-text-center uk-scrollspy-inview">
             Amplop Digital </h2>
         <hr class="divider">
         <div class="lg:tw-w-4/5 lg:tw-mx-auto">

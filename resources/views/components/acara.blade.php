@@ -1,34 +1,34 @@
 <section class="uk-container uk-container-small">
     <div class="sm:tw-max-w-screen-sm md:tw-max-w-screen-md lg:tw-max-w-screen-lg tw-mx-auto tw-px-2.5 tw-pt-10 tw-pb-3">
-        <h2 class="tw-text-5xl tw-mt-3 tw-text-brown-dark font-cookie tw-text-center tw-pt-10 uk-scrollspy-inview">
+        <h2 class="tw-text-5xl tw-mt-3 text-gold font-cookie tw-text-center tw-pt-10 uk-scrollspy-inview">
             Save The Date </h2>
         <hr class="divider">
         <p class="tw-text-center tw-mt-2 tw-mb-8 tw-text-4xl">Sabtu, 30 Juli 2022</p>
 
         <div class="uk-grid-small uk-flex-center uk-child-width-auto uk-grid uk-countdown uk-scrollspy-inview" uk-grid uk-countdown="date: 2022-07-30T09:00:00+07:00">
             <div>
-                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark tw-text-center uk-countdown-number uk-countdown-days">
+                <div class="tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-days">
                 </div>
                 <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Hari</div>
             </div>
             <div class="uk-countdown-separator"></div>
             <div>
-                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark tw-text-center uk-countdown-number uk-countdown-hours">
+                <div class="tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-hours">
                 </div>
                 <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Jam</div>
             </div>
             <div class="uk-countdown-separator"></div>
             <div>
-                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark tw-text-center uk-countdown-number uk-countdown-minutes">
+                <div class="tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-minutes">
                 </div>
                 <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Menit</div>
             </div>
             <div class="uk-countdown-separator"></div>
             <div>
-                <div class="tw-text-3xl tw-font-semibold tw-text-brown-dark tw-text-center uk-countdown-number uk-countdown-seconds">
+                <div class="tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-seconds">
                 </div>
                 <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Detik</div>
@@ -40,15 +40,15 @@
                 <div class="uk-first-column">
                     <div class="tw-grid tw-grid-cols-1 tw-gap-3">
                         <div>
-                            <p class="tw-text-brown-dark tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Akad</p>
+                            <p class="text-gold tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Akad</p>
                             <p class="tw-text-center tw-mt-1 tw-text-md sm:tw-text-base md:tw-text-base" style="font-size: 14px !important;">Pukul 09.00 - 10.00 WIB</p>
                         </div>
                         <div>
-                            <p class="tw-text-brown-dark tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Resepsi</p>
+                            <p class="text-gold tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Resepsi</p>
                             <p class="tw-text-center tw-mt-1 tw-text-md sm:tw-text-base md:tw-text-base" style="font-size: 14px !important;">Pukul 10.30 - 13.30 WIB</p>
                         </div>
                         <div>
-                            <p class="tw-text-brown-dark tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Lokasi Acara</p>
+                            <p class="text-gold tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Lokasi Acara</p>
                             @if ($guest->attendance_type == 'offline')
                             <div>
                                 <p class="tw-text-center tw-font-bold tw-mt-1 tw-text-md sm:tw-text-base md:tw-text-base" style="font-size: 16px !important;">Luminor Hotel Jemursari, Surabaya</p>
@@ -60,7 +60,7 @@
                                 &nbsp;
                             </p>
                             <div>
-                                <p class="tw-text-brown-dark tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Protokol Acara</p>
+                                <p class="text-gold tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Protokol Acara</p>
                                 <div class="tw-grid tw-grid-cols-2 tw-gap-4">
                                     <div>
                                         <img src="/images/protocol/protocol-2.png" width="85" class="tw-h-auto tw-mx-auto" alt="Sehat">
@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                             <div style="font-size:14px; text-align:center; margin: 15px 0 0px 0;">
-                                <p class="tw-text-brown-dark tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Konfirmasi Kehadiran</p>
+                                <p class="text-gold tw-font-normal tw-text-1xl sm:tw-text-2xl lg:tw-text-2xl" style="font-family: Signature;">Konfirmasi Kehadiran</p>
                                 @include('components.rsvp')
                             </div>
                             @else
