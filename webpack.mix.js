@@ -15,4 +15,5 @@ mix.js("resources/js/app.js", "public/js/app.js")
     .js("resources/js/dashboard.js", "public/js/dashboard.js")
     .postCss("resources/css/tailwind.css", "public/css")
     .postCss("resources/css/invitation-dark.css", "public/css")
-    .sass("resources/sass/app.scss", "public/css");
+    .sass("resources/sass/app.scss", "public/css")
+    .version();

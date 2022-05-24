@@ -1,7 +1,7 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/js/dashboard.js": "/js/dashboard.js",
-    "/css/app.css": "/css/app.css",
-    "/css/invitation-dark.css": "/css/invitation-dark.css",
-    "/css/tailwind.css": "/css/tailwind.css"
+    "/js/app.js": "/js/app.js?id=1e45af8306f13181069aabc049eab32d",
+    "/js/dashboard.js": "/js/dashboard.js?id=8b24e0274332f7c097a5b156a7e7f763",
+    "/css/app.css": "/css/app.css?id=1ba4616002e30d600ff3f664161ff848",
+    "/css/invitation-dark.css": "/css/invitation-dark.css?id=143c50128ff693587b2a41279c3d9344",
+    "/css/tailwind.css": "/css/tailwind.css?id=43b150a0f00c37f239ed5937d1912990"
 }
