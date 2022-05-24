@@ -1,6 +1,8 @@
 <section>
     <div>
-        <audio id="music" src="/music/kenny-g-forever-in-love.mp3" loop></audio>
+        <audio id="music" loop>
+            <source src="/music/kenny-g-forever-in-love.mp3" type="audio/mp3">
+        </audio>
     </div>
     <div>
         <div class="music-box">
