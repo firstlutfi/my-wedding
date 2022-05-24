@@ -257,7 +257,7 @@ button.addEventListener('click', function () {
     // Start playing audio when the user clicks on the 'buka undangan' button
     const audio = document.getElementById("music");
     audio.play();
-}, false);
+}, true);
 const modal = UIkit.modal("#my_id");
 modal.show();
 // UIkit.util.on("#my_id", "hidden", function () {

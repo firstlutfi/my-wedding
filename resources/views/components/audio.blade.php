@@ -1,6 +1,6 @@
 <section>
     <div>
-        <audio id="music" src="/music/kenny-g-forever-in-love.mp3" autoplay loop></audio>
+        <audio id="music" src="/music/kenny-g-forever-in-love.mp3" loop></audio>
     </div>
     <div>
         <div class="music-box">
