@@ -110,23 +110,14 @@
             </div>
         </div> -->
 
-        <div id="my_id" bg-close="false" class="uk-modal uk-flex uk-togglabe-enter uk-open" tabindex="0">
-            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center " style="background: transparent; background-image: url('/images/amplop-2.png'); padding:20px 15px 60px 15px; background-position: center;
-            background-repeat: unset;
-            background-size: cover; border-radius:16px;  height: 400px;
-            ">
-
-                <div class="tw-mt-24 tw-text-center" style="transform: rotate(-8deg);">
-                    <p class="uk-text-medium uk-margin-remove-bottom txt-simple"></p>
-
-                    <div class="tw-mb-3"></div>
-
-                    <p class="uk-text-medium txt-simple">UNTUK</p>
-                    <h2 class="tw-mt-4" style="line-height:1; margin-bottom:9px !important; font-size:28px;">
-                    {{ $guest->guest_name }}</h2>
+        <div id="my_id" uk-modal="" bg-close="false" esc-close="false" class="uk-modal uk-flex uk-open" tabindex="0">
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center " style="background: transparent; background-image: url('/images/envelope-new.png'); padding:20px 15px 60px 15px; background-position: center;background-repeat: unset;background-size: cover; border-radius:16px;  height: 400px;width: 342px;">
+                <div class=" tw-mt-24  tw-text-center">
+                    <p class="tw-text-xs tw-font-semibold uk-margin-remove-bottom txt-simple">UNTUK : </p>
+                    <h2 class="tw-text-black tw-text-xl md:tw-text-2xl tw-font-bold tw-mt-2" style="font-size:28px; font-family:'Lato';">{{ $guest->guest_name }}</h2>
                 </div>
 
-                <div class="tw-mt-20">
+                <div class="uk-position-bottom" style="padding: 1rem;">
                     <button id="play-sound" class="uk-modal-close tw-bg-white tw-text-brown-dark tw-text-xs tw-tracking-widest tw-py-2 tw-px-4 tw-rounded-lg tw-w-3/5" type="button">OPEN INVITATION</button>
                 </div>
 
