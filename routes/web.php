@@ -23,3 +23,5 @@ Auth::routes();
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('guest/{invitation_code}', 'GuestListController@getUserData');
 Route::patch('guest/{invitation_code}', 'GuestListController@updateUserData');
+Route::delete('guest/{invitation_code}', 'GuestListController@delete');
+Route::post('guest', 'GuestListController@store');

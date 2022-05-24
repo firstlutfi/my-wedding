@@ -75,9 +75,9 @@
                     <td>{{ $gst->attendance_type == 'online' ? '-' : ($gst->rsvp == null ? 'Not Yet' : ucfirst($gst->rsvp)) }}</td>
                     <td>{{ $gst->number_of_attendance }}</td>
                     <td>
-                        <a href="#" class="trigger-modal-view" data-code="{{ $gst->invitation_code }}"><span><i class="fa-solid fa-eye"></i></span></a>&nbsp;&nbsp;&nbsp;
-                        <a href="#" class="trigger-modal-edit" data-code="{{ $gst->invitation_code }}"><span><i class="fa-solid fa-pen-to-square"></i></span></a>&nbsp;&nbsp;&nbsp;
-                        <a href="#" class="modal-delete"><span><i class="fa-solid fa-trash"></i></span></a>
+                        <a class="trigger-modal-view" data-code="{{ $gst->invitation_code }}"><span><i class="fa-solid fa-eye"></i></span></a>&nbsp;&nbsp;&nbsp;
+                        <a class="trigger-modal-edit" data-code="{{ $gst->invitation_code }}"><span><i class="fa-solid fa-pen-to-square"></i></span></a>&nbsp;&nbsp;&nbsp;
+                        <a class="trigger-delete" data-code="{{ $gst->invitation_code }}"><span><i class="fa-solid fa-trash"></i></span></a>
                     </td>
                 </tr>
                 @endforeach
@@ -163,7 +163,7 @@
             </div>
             <div class="modal-body">
                 <form id="form-edit-create">
-                    <div class="form-group row">
+                    <div class="form-group row" id="invitation-code-row">
                         <label for="staticEmail" class="col-sm-4 col-form-label">Invitation Code</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control" id="input-invitation-code">
@@ -172,13 +172,13 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label">Guest Name</label>
                         <div class="col-sm-8">
-                            <input type="text" name="guest_name" class="form-control" id="input-guest-name">
+                            <input type="text" name="guest_name" class="form-control" id="input-guest-name" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label">Attendance Type</label>
                         <div class="col-sm-8">
-                            <select name="attendance_type" class="form-control" id="input-attendance-type">
+                            <select name="attendance_type" class="form-control" id="input-attendance-type" required>
                                 <option value="online">Online</option>
                                 <option value="offline">Offline</option>
                             </select>
@@ -194,22 +194,22 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group row">
+                    <div class="form-group row" id="number-of-attendance-row">
                         <label for="staticEmail" class="col-sm-4 col-form-label">Number of Attendance</label>
                         <div class="col-sm-8">
-                            <input type="number" name="max_attendance" class="form-control" id="input-number-of-attendance">
+                            <input type="number" name="number_of_attendance" class="form-control" value="0" id="input-number-of-attendance">
                         </div>
                     </div>
-                    <div class="form-group row">
+                    <div class="form-group row" id="max-attendance-row">
                         <label for="staticEmail" class="col-sm-4 col-form-label">Max Attendance</label>
                         <div class="col-sm-8">
-                            <input type="number" name="max_attendance" class="form-control" id="input-max-attendance">
+                            <input type="number" name="max_attendance" class="form-control" id="input-max-attendance" value="0" required>
                         </div>
                     </div>
-                    <div class="form-group row">
+                    <div class="form-group row" id="enable-edit-name-row">
                         <label for="staticEmail" class="col-sm-4 col-form-label">Enable Edit Name</label>
                         <div class="col-sm-8">
-                            <select name="enable_edit_name" class="form-control" id="input-enable-edit-name">
+                            <select name="enable_edit_name" class="form-control" id="input-enable-edit-name" required>
                                 <option value="0">No</option>
                                 <option value="1">Yes</option>
                             </select>

@@ -98,13 +98,12 @@
         <a href=""></a>
         <div id="my_id" uk-modal="" bg-close="false" class="uk-modal uk-flex uk-open" tabindex="0" esc-close="false">
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center" id="modal-envelope">
-
-                <div class="tw-mt-20 md:tw-mt-28 tw-ml-14 tw-text-center" style="transform: rotate(-8deg);">
-                    <p class="tw-text-base uk-margin-remove-bottom txt-simple">UNTUK: </p>
-                    <h2 class="tw-text-black tw-mt-2" style="line-height:1; font-size:28px;">{{ $guest->guest_name }}</h2>
+                <div class="tw-mt-16 md:tw-mt-20 tw-ml-10 md:tw-ml-14 tw-text-center uk-text-background" style="transform: rotate(-8deg);width: 320px;">
+                    <p class="tw-text-xs tw-font-semibold uk-margin-remove-bottom txt-simple">UNTUK: </p>
+                    <h2 class="tw-text-black tw-text-xl md:tw-text-2xl tw-font-bold tw-mt-2" style="font-size:28px; font-family:'Lato';">{{ $guest->guest_name }}</h2>
                 </div>
 
-                <div class="tw-mt-32 md:tw-mt-40">
+                <div class="tw-mt-36 md:tw-mt-40 uk-position-center">
                     <button id="play-sound" class="uk-modal-close tw-bg-white tw-text-gray-600 tw-text-xs tw-tracking-widest tw-py-2 tw-px-4 tw-rounded-lg md:tw-w-60" type="button">BUKA UNDANGAN</button>
                 </div>
 

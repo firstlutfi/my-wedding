@@ -841,7 +841,7 @@ blockquote.love-quote:before {
 }
 
 .uk-notification-message-primary {
-    color: rgba(221, 169, 80, 1);
+    color: #000;
 }
 
 #modal-envelope {
@@ -946,6 +946,12 @@ button.btn-main:disabled {
         right: 0;
         left: 0;
     }
+
+    .uk-notification-top-right{
+        top: calc(50%);
+        --uk-position-translate-y: -50%;
+        transform: translate(0,var(--uk-position-translate-y));
+    }
 }
 
 @media (min-width: 769px) {
@@ -971,4 +977,8 @@ button.btn-main:disabled {
 
 .bg-gold{
     background-color: rgba(221, 169, 80, 1) !important;
+}
+
+.uk-notification-top-right{
+    box-shadow: 5px 5px rgb(221 169 80 / 50%);
 }

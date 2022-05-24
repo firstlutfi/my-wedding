@@ -4,6 +4,24 @@ $(document).ready(function () {
     $("#guest-table").DataTable({
         columnDefs: [{ orderable: false, targets: [0, 1, 2, 3, 5] }],
         order: [],
+        dom: '<"row"<"col-md-4"l><"col-md-4"f><"col-md-4"B>>rtip',
+        buttons: [
+            {
+                text: 'Add New Guest',
+                className: 'btn btn-primary',
+                attr:  {
+                    title: 'Add New Guest',
+                    id: 'trigger-modal-create'
+                }
+            }
+        ],
+        language: {
+            lengthMenu: "Show maximum _MENU_ rows",
+        },
+        initComplete: function(settings, json) {
+            $('#trigger-modal-create').removeClass('dt-button');
+            $('.dt-buttons').addClass('float-right');
+          }
     });
 
     $(".trigger-modal-view").click(function () {
@@ -31,8 +49,12 @@ $(document).ready(function () {
         axios.get(`/guest/${$(this).data("code")}`).then(({ data }) => {
             if (data.attendance_type == "offline") {
                 $("#input-attendance-type").val("offline").change();
+                $('#max-attendance-row').show();
+                $('#enable-edit-name-row').hide();
             } else {
                 $("#input-attendance-type").val("online").change();
+                $('#max-attendance-row').hide();
+                $('#input-max-attendance').val(0);
             }
 
             if (data.enable_edit_name == 1) {
@@ -81,6 +103,104 @@ $(document).ready(function () {
                 }else{
                     window.location.reload();
                 }
+            });
+        }
+        
+    });
+
+    $("#btn-create").click(function () {
+        valid = document.getElementById('form-edit-create').reportValidity();
+        if (valid) {
+            axios
+            .post('/guest', {
+                invitation_code: $("#input-invitation-code").val(),
+                guest_name: $("#input-guest-name").val(),
+                attendance_type: $("#input-attendance-type").val(),
+                rsvp: $("#input-rsvp").val(),
+                number_of_attendance: $("#input-number-of-attendance").val(),
+                max_attendance: $("#input-max-attendance").val(),
+                enable_edit_name: $("#input-enable-edit-name").val(),
+            })
+            .then(({ data }) => {
+                if (data.hasOwnProperty('errors')){
+                    alert(data.errors);
+                }else{
+                    window.location.reload();
+                }
+            });
+        }
+        
+    });
+
+    $("#trigger-modal-create").click(function () {
+        $("#invitation-code-row").hide();
+        $("#rsvp-row").hide();
+        $("#max-attendance-row").hide();
+        $("#number-of-attendance-row").hide();
+        $("#btn-update").hide();
+        $("#modal-create-edit").modal();
+    });
+
+    $('#input-attendance-type').change(function (){
+        if ($(this).val() == 'offline') {
+            $('#rsvp-row').show();
+            $("#input-rsvp").val("-").change();
+            $('#number-of-attendance-row').show();
+            $('#input-number-of-attendance').val(0).change();
+            $('#max-attendance-row').show();
+            $('#input-max-attendance').attr({ min: 1 }).val(1);
+            $('#enable-edit-name-row').hide();
+        } else {
+            $('#rsvp-row').hide();
+            $("#input-rsvp").val("-").change();
+            $('#number-of-attendance-row').hide();
+            $('#input-number-of-attendance').val(0).change();
+            $('#max-attendance-row').hide();
+            $('#input-max-attendance').attr({ min: 0 }).val(0).change();
+            $('#enable-edit-name-row').show();
+        }
+    });
+
+    $('#input-max-attendance').change(function (){
+        $('#input-number-of-attendance').attr({ max: $(this).val(), min: 0 })
+    });
+
+    $('#input-rsvp').change(function (){
+        if ($(this).val() != 'yes') {
+            $('#input-number-of-attendance').val(0);
+        }
+    });
+
+    $('#input-number-of-attendance').keyup(function (){
+        if ($('#input-rsvp').val() == 'yes') {
+            if (parseInt($(this).val()) > parseInt($('#input-max-attendance').val())) {
+                $(this).val($('#input-max-attendance').val());
+            }else if (parseInt($(this).val()) < 0) {
+                $(this).val(0);
+            }
+        }else{
+            $(this).val(0);
+        }
+        
+    });
+
+    $('#input-max-attendance').keyup(function (){
+        if (parseInt($(this).val()) < 1) {
+            $(this).val(1);
+        }
+    });
+
+    $(".trigger-delete").click(function () {
+        let choice = confirm(`Are you sure want to delete guest with code ${$(this).data("code")}?`);
+        if (choice) {
+            axios.delete(`/guest/${$(this).data("code")}`).then(({ data }) => {
+                if (data.hasOwnProperty('errors')){
+                    alert(data.errors);
+                }else{
+                    window.location.reload();
+                }
+            }).catch(function (error) {
+                alert(error.message);
             });
         }
         

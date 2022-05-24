@@ -73,4 +73,19 @@ class GuestListController extends Controller
         
         return json_encode($response);
     }
+
+    public function delete(Request $request)
+    {
+        $guest = GuestList::where('invitation_code', $request->invitation_code)->firstOrFail();
+        $response = [];
+        try {
+            $guest->delete();
+
+            $response['guest'] = $guest;
+        } catch (\Throwable $th) {
+            $response['errors'] = $th->getMessage();
+        }
+
+        return json_encode($guest);
+    }
 }

@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="lg:tw-w-4/5 lg:tw-mx-auto">
-            <p class="tw-text-center tw-mt-8 tw-mb-2 tw-text-xl">Untuk transfer beda bank tanpa biaya admin, anda dapat menggunakan aplikasi Flip.</p>
+            <p class="tw-text-center tw-font-semibold tw-mt-8 tw-mb-2 tw-text-lg">Untuk transfer beda bank tanpa biaya admin, anda dapat menggunakan aplikasi Flip.</p>
             <img src="/images/gifts/flip-logo.svg" alt="Logo Flip" class="tw-h-auto tw-mx-auto tw-mb-2">
             <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-2 tw-mb-5 ">
                 <div class="store-badge tw-text-center tw-mx-auto">
