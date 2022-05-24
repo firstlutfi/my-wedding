@@ -252,10 +252,15 @@ toggleAudio = function () {
     }
 };
 
-const modal = UIkit.modal("#my_id");
-modal.show();
-UIkit.util.on("#my_id", "hidden", function () {
-    console.log('masuk sini');
+const button = document.getElementById('play-sound');
+button.addEventListener('click', function () {
+    // Start playing audio when the user clicks on the 'buka undangan' button
     const audio = document.getElementById("music");
     audio.play();
-});
+}, false);
+const modal = UIkit.modal("#my_id");
+modal.show();
+// UIkit.util.on("#my_id", "hidden", function () {
+//     const audio = document.getElementById("music");
+//     audio.play();
+// });

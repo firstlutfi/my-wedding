@@ -118,7 +118,7 @@
                 </div>
 
                 <div class="uk-position-bottom" style="padding: 1rem;">
-                    <button id="play-sound" class="uk-modal-close tw-bg-white tw-text-brown-dark tw-text-xs tw-tracking-widest tw-py-2 tw-px-4 tw-rounded-lg tw-w-3/5" type="button">OPEN INVITATION</button>
+                    <button id="play-sound" class="uk-modal-close tw-bg-white tw-text-brown-dark tw-text-xs tw-tracking-widest tw-py-2 tw-px-4 tw-rounded-lg tw-w-3/5" type="button">BUKA UNDANGAN</button>
                 </div>
 
             </div>
