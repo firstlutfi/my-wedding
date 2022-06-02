@@ -12,7 +12,7 @@
         <h2 class="tw-text-4xl md:tw-text-5xl tw-mt-3 text-gold font-cookie tw-text-center uk-scrollspy-inview">
             The Bride & The Groom </h2>
         <hr class="divider">
-        <div class="couple-wrap">
+        <div class="couple-wrap tw-mt-10">
             <div class="couple-half">
                 <div class="groom"><img src="/images/cpw-square.png" alt="groom" class="img-responsive" loading="lazy"></div>
                 <div class="desc-groom tw-my-auto">
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <p class="heart tw-text-center"><i class="fa-solid fa-heart heart-pulse"></i></p>
-            <div class="couple-half" style="margin-bottom: 20px;">
+            <div class="couple-half">
                 <div class="bride"><img src="/images/cpp-square.png" alt="groom" class="img-responsive" loading="lazy"></div>
                 <div class="desc-bride tw-my-auto">
                     <h3 class="m-name tw-text-3xl md:tw-text-4xl text-gold">Lutfi Fitroh Hadi</h3>
@@ -29,11 +29,11 @@
                 </div>
             </div>
         </div>
-        <div class="">
-        <blockquote class="ayat tw-mx-auto tw-text-center tw-w-full xl:tw-w-1/2">
-            <p class="tw-text-lg">Mahasuci (Allah) yang telah menciptakan semuanya berpasang-pasangan, baik dari apa yang ditumbuhkan oleh bumi dan dari diri mereka sendiri, maupun dari apa yang tidak mereka ketahui.</p>
-            <cite class="tw-text-center">(Q.S. Yaasin: 36) </cite>
-        </blockquote>
+        <div class="uk-container uk-container-small tw-mb-10">
+            <blockquote class="ayat tw-mx-auto tw-text-center tw-w-full">
+                <p class="tw-text-lg tw-pt-10">Mahasuci (Allah) yang telah menciptakan semuanya berpasang-pasangan, baik dari apa yang ditumbuhkan oleh bumi dan dari diri mereka sendiri, maupun dari apa yang tidak mereka ketahui.</p>
+                <cite class="tw-text-center">(Q.S. Yaasin: 36) </cite>
+            </blockquote>
         </div>
         <!-- <div class="lg:tw-w-4/5 lg:tw-mx-auto">
             <div class="tw-grid md:tw-flex tw-mx-auto">

@@ -602,6 +602,7 @@ blockquote {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
+    border: 1px solid rgba(221, 169, 80, 1);
 }
 
 .couple-half .groom {
@@ -823,7 +824,6 @@ blockquote.love-quote:before {
 }
 
 blockquote.ayat {
-    padding: 30px 80px 40px;
     position: relative;
 }
 
@@ -837,7 +837,7 @@ blockquote.ayat p {
 }
 
 blockquote.ayat:before {
-    left: 50px;
+    left: 0px;
     position: absolute;
     font-family: "FontAwesome";
     top: 0;
@@ -847,7 +847,7 @@ blockquote.ayat:before {
 }
 
 blockquote.ayat:after {
-    right: 50px;
+    right: 0px;
     position: absolute;
     font-family: "FontAwesome";
     content: "\f10e";
