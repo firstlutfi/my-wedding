@@ -562,13 +562,15 @@ blockquote {
 }
 
 .couple-wrap {
-    width: 90%;
+    width: 100%;
+    min-height: 220px;
     margin: 0 auto;
     position: relative;
 }
 @media screen and (max-width: 768px) {
     .couple-wrap {
         width: 100%;
+        height: 80vh;
     }
 }
 
@@ -576,11 +578,7 @@ blockquote {
     width: 50%;
     float: left;
 }
-@media screen and (max-width: 768px) {
-    .couple-half {
-        width: 100%;
-    }
-}
+
 .couple-half h3 {
     font-family: "Sacramento", Arial, serif;
     color: #f14e95;
@@ -593,48 +591,54 @@ blockquote {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 .couple-half .groom img,
 .couple-half .bride img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
 }
-@media screen and (max-width: 480px) {
-    .couple-half .groom,
-    .couple-half .bride {
-        width: 100%;
-        height: 140px;
-    }
-    .couple-half .groom img,
-    .couple-half .bride img {
-        width: 120px;
-        height: 120px;
-        margin: 0 auto;
-    }
-}
+
 .couple-half .groom {
     float: right;
-    margin-right: 5px;
 }
 .couple-half .bride {
     float: left;
-    margin-left: 5px;
 }
 .couple-half .desc-groom {
-    padding-right: 180px;
+    padding-top: 50px;
+    padding-right: 220px;
     text-align: right;
 }
 .couple-half .desc-bride {
-    padding-left: 180px;
+    padding-top: 50px;
+    padding-left: 220px;
     text-align: left;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 768px) {
+    .couple-half {
+        width: 100%;
+        height: 350px;
+    }
+
+    .couple-half .groom,
+    .couple-half .bride {
+        width: 100%;
+        height: 220px;
+    }
+    .couple-half .groom img,
+    .couple-half .bride img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
     .couple-half .groom,
     .couple-half .bride {
         margin-left: 0;
@@ -652,39 +656,25 @@ blockquote {
 
 .heart {
     position: absolute;
-    top: 4em;
+    top: 5em;
     left: 0;
     right: 0;
     z-index: 99;
-    animation: pulse 1s ease infinite;
 }
+
 .heart i {
-    font-size: 20px;
+    font-size: 15px;
     background: #fff;
-    padding: 20px;
-    color: #f14e95;
+    padding: 5px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
 }
+
 @media screen and (max-width: 768px) {
     .heart {
         display: none;
-    }
-}
-
-.and-love {
-    display: none;
-}
-
-@media only screen and (max-width: 420px) {
-    .and-love {
-        display: block;
-        text-align: center;
-        font-size: 5em !important;
-        color: rgba(241, 78, 149, 0.8);
-        font-weight: bold;
     }
 }
 
@@ -701,7 +691,7 @@ blockquote {
 }
 
 .m-name {
-    font-family: Greenlight Script;
+    font-family: Greenlight Script !important;
 }
 
 .pl {
@@ -819,6 +809,7 @@ blockquote.love-quote p {
     font-size: 2.25rem;
     font-weight: 700px;
     text-align: center;
+    line-height: 1.5 !important;
 }
 
 blockquote.love-quote:before {
@@ -828,6 +819,39 @@ blockquote.love-quote:before {
     top: 0;
     content: "\f10d";
     font-size: 100px;
+    color: rgba(221, 169, 80, .5);
+}
+
+blockquote.ayat {
+    padding: 30px 80px 40px;
+    position: relative;
+}
+
+blockquote.ayat p {
+    display: block;
+    position: relative;
+    font-size: 2.25rem;
+    font-weight: 700px;
+    text-align: center;
+    line-height: 1.5 !important;
+}
+
+blockquote.ayat:before {
+    left: 50px;
+    position: absolute;
+    font-family: "FontAwesome";
+    top: 0;
+    content: "\f10d";
+    font-size: 36px;
+    color: rgba(221, 169, 80, .5);
+}
+
+blockquote.ayat:after {
+    right: 50px;
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f10e";
+    font-size: 36px;
     color: rgba(221, 169, 80, .5);
 }
 
@@ -916,13 +940,13 @@ button.btn-main:disabled {
 
 @media (orientation: landscape) {
     .wedding-logo {
-        height: 8vw;
+        height: 12vw;
     }
 }
 
 @media (orientation: portrait) {
     .wedding-logo {
-        height: 8vh;
+        height: 12vh;
     }
 }
 
@@ -936,7 +960,7 @@ button.btn-main:disabled {
 
 @media (max-width: 768px) {
     .cover{
-        background-image: url('/images/bg-small-device.png');
+        background-image: url('/images/test-cover-small.png');
         height: 100vh;
     }
 
@@ -956,7 +980,7 @@ button.btn-main:disabled {
 
 @media (min-width: 769px) {
     .cover{
-        background-image: url('/images/bg-new.png');
+        background-image: url('/images/test-cover.png');
         height: 100vh;
     }
 

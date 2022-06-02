@@ -46,7 +46,7 @@
             </div>
         </div>
         <blockquote class="love-quote tw-text-center sm:tw-w-full md:tw-w-full">
-            <p>Love is the only flowers that grows and blossoms without the aid of seasons</p>
+            <p class="tw-text-3xl md:tw-text-4xl">Love is the only flowers that grows and blossoms without the aid of seasons</p>
             <cite class="tw-text-center">&mdash;&nbsp;Kahlil Gibran</cite>
         </blockquote>
         <div class="tw-pt-2">

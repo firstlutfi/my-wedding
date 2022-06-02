@@ -33,8 +33,11 @@
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -87,9 +90,10 @@
                 @include('components.comments')
             </div>
 
-            <div id="footer" style="background: rgba(0,0,0,.05);">
-                <p class="tw-text-xs tw-text-extralight tw-text-center tw-italic text-thelast">
+            <div id="footer" class="tw-py-3" style="background: rgba(0,0,0,.05);">
+                <p class="tw-text-xs tw-text-extralight tw-text-center text-thelast">
                     Made with love by Lutfi
+                    <br>Available on &nbsp;<a href="https://github.com/firstlutfi/my-wedding" class="tw-text-black"><i class="fa-brands fa-github"></i> Github</a>
                 </p>
             </div>
 

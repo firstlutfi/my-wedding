@@ -1,36 +1,36 @@
 <section class="uk-container uk-container-small">
     <div class="sm:tw-max-w-screen-sm md:tw-max-w-screen-md lg:tw-max-w-screen-lg tw-mx-auto tw-px-2.5 tw-pt-10 tw-pb-3">
-        <h2 class="tw-text-5xl tw-mt-3 text-gold font-cookie tw-text-center tw-pt-10 uk-scrollspy-inview">
+        <h2 class="tw-text-4xl md:tw-text-5xl tw-mt-3 text-gold font-cookie tw-text-center tw-pt-10 uk-scrollspy-inview">
             Save The Date </h2>
         <hr class="divider">
-        <p class="tw-text-center tw-mt-2 tw-mb-8 tw-text-4xl tw-font-bold">Sabtu, 30 Juli 2022</p>
+        <p class="tw-text-center tw-mt-2 tw-mb-8 tw-text-3xl md:tw-text-4xl tw-font-bold">Sabtu, 30 Juli 2022</p>
 
         <div class="uk-grid-small uk-flex-center uk-child-width-auto uk-grid uk-countdown uk-scrollspy-inview" uk-grid uk-countdown="date: 2022-07-30T09:00:00+07:00">
             <div>
-                <div class="tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-days">
+                <div class="tw-text-2xl md:tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-days">
                 </div>
-                <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
+                <div class="tw-text-xl md:tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Hari</div>
             </div>
             <div class="uk-countdown-separator"></div>
             <div>
-                <div class="tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-hours">
+                <div class="tw-text-2xl md:tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-hours">
                 </div>
-                <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
+                <div class="tw-text-xl md:tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Jam</div>
             </div>
             <div class="uk-countdown-separator"></div>
             <div>
-                <div class="tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-minutes">
+                <div class="tw-text-2xl md:tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-minutes">
                 </div>
-                <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
+                <div class="tw-text-xl md:tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Menit</div>
             </div>
             <div class="uk-countdown-separator"></div>
             <div>
-                <div class="tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-seconds">
+                <div class="tw-text-2xl md:tw-text-3xl tw-font-semibold text-gold tw-text-center uk-countdown-number uk-countdown-seconds">
                 </div>
-                <div class="tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
+                <div class="tw-text-xl md:tw-text-2xl tw-font-semibold uk-countdown-label uk-text-center">
                     Detik</div>
             </div>
         </div>
@@ -38,16 +38,16 @@
         <div class="uk-width-1-1 uk-text-center tw-py-4">
             <div class="uk-grid-small uk-child-width-expand uk-grid uk-grid-stack" uk-grid="">
                 <div class="uk-first-column">
-                    <div class="tw-grid tw-grid-cols-1 tw-gap-3">
+                    <div class="tw-grid tw-grid-cols-2 tw-gap-3">
                         <div class="tw-my-4">
                             <p class="text-gold tw-font-normal tw-text-3xl" style="font-family: Signature;">Akad</p>
-                            <p class="tw-text-center tw-mt-1 tw-text-md tw-font-bold">Pukul 09.00 - 10.00 WIB</p>
+                            <p class="tw-text-center tw-mt-1 tw-text-md tw-font-bold">09.00 - 10.00 WIB</p>
                         </div>
                         <div class="tw-my-4">
                             <p class="text-gold tw-font-normal tw-text-3xl" style="font-family: Signature;">Resepsi</p>
-                            <p class="tw-text-center tw-mt-1 tw-text-md tw-font-bold">Pukul 10.30 - 13.30 WIB</p>
+                            <p class="tw-text-center tw-mt-1 tw-text-md tw-font-bold">10.30 - 13.00 WIB</p>
                         </div>
-                        <div class="tw-mt-4">
+                        <div class="tw-col-span-2 tw-mt-4">
                             <p class="text-gold tw-font-normal tw-text-3xl" style="font-family: Signature;">Lokasi Acara</p>
                             @if ($guest->attendance_type == 'offline')
                             <div>
@@ -87,11 +87,11 @@
                             @else
                             <p class="tw-text-center tw-font-bold tw-mt-1 tw-text-md sm:tw-text-base md:tw-text-base" style="font-size: 16px !important;">Kota Surabaya, Jawa Timur</p>
                             <blockquote class="tw-mt-3 tw-py-2 tw-px-2 sidekick">
-                                Sehubungan dengan situasi pandemi yang belum sepenuhnya berakhir, kami memutuskan untuk membatasi jumlah tamu undangan yang hadir.
-                                Maka dari itu, kami mohon maaf yang sebesar-besarnya jika belum bisa mengundang seluruh rekan-rekan ataupun saudara/i di hari bahagia kami.
-                                <br> Tapi jangan khawatir, prosesi pernikahan kami juga bisa disaksikan melalui layanan livestream di bawah ini.
+                                Sehubungan dengan situasi pandemi yang belum sepenuhnya berakhir dan sesuai dengan peraturan Pemkot Surabaya tentang PPKM, kami memutuskan untuk membatasi jumlah tamu undangan yang hadir.
+                                Mohon maaf yang sebesar-besarnya jika kami belum bisa mengundang seluruh rekan-rekan ataupun saudara/i di hari bahagia ini.
+                                <br> Tapi jangan khawatir, prosesi pernikahan kami juga bisa disaksikan melalui layanan livestream di bawah.
                             </blockquote>
-                            <iframe width="100%" class="youtube-frame tw-mt-5" src="https://www.youtube.com/embed/gHgX6zPu23E" title="Livestream wedding Lutfi & Vira" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="tw-mt-5"></iframe>
+                            <iframe width="100%" class="tw-mt-5 tw-aspect-video" src="https://www.youtube.com/embed/gHgX6zPu23E" title="Livestream wedding Lutfi & Vira" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="tw-mt-5"></iframe>
                             @endif
                         </div>
                         <div>
