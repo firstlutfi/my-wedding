@@ -2,7 +2,7 @@
 <div class="tw-w-full tw-py-5 tw-px-4 tw-h-auto tw-mb-4 tw-rounded-lg uk-animation-slide-right" style="background: rgba(0,0,0,.05);">
     <div class="tw-flex tw-space-x-2 sm:tw-space-x-4">
         <div class="tw-flex-none tw-h-12 tw-w-12 tw-rounded-full bg-gold tw-relative">
-            <span class="tw-font-extrabold tw-text-black tw-text-center tw-text-1xl tw-p-2 tw-mt-0.5 tw-absolute tw-top-0 tw-left-0 tw-right-0">
+            <span class="tw-font-extrabold tw-text-black tw-text-center tw-text-1xl tw-absolute uk-position-center">
                 {{ UtilityHelper::setNameInitial($cmt->comment_from) }}
             </span>
         </div>

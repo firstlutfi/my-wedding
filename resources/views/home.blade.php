@@ -114,7 +114,7 @@
             </div>
         </div> -->
 
-        <div id="my_id" uk-modal="" bg-close="false" esc-close="false" class="uk-modal uk-flex uk-open" tabindex="0">
+        <div id="my_id" uk-modal="" bg-close="false" esc-close="false" sel-close="#play-sound" class="uk-modal uk-flex uk-open" tabindex="0">
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center " style="background: transparent; background-image: url('/images/envelope-new.png'); padding:20px 15px 60px 15px; background-position: center;background-repeat: unset;background-size: cover; border-radius:16px;  height: 400px;width: 342px;">
                 <div class=" tw-mt-24  tw-text-center">
                     <p class="tw-text-xs tw-font-semibold uk-margin-remove-bottom txt-simple">UNTUK : </p>

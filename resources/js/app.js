@@ -25,6 +25,7 @@ axios.interceptors.request.use(
 );
 
 copyRekening = function (rekening) {
+    UIkit.notification.closeAll();
     var copyText = document.getElementById(rekening);
     navigator.clipboard.writeText(copyText.value);
     UIkit.notification({
@@ -120,7 +121,7 @@ showRsvpResponse = function (rsvp) {
 
     let bottomInfo = `<div class="uk-margin uk-animation-scale-up">
 <p class="tw-text-center tw-text-sm tw-text-black tw-break-words">Ingin mengubah data reservasi?
-    <br>Silakan hubungi <a class="text-gold" target="_blank" href="https://wa.me/6281214715383?text=Hallo Lutfi! Saya ingin mengubah data reservasi atas nama ${rsvp.guest_name}">Lutfi</a> atau <a class="text-gold" target="_blank" href="https://wa.me/6282141002888?text=Hallo Vira! Saya ingin mengubah data reservasi atas nama ${rsvp.guest_name}">Vira</a>.
+    <br>Silakan hubungi <a class="text-gold" target="_blank" href="https://wa.me/6281214715383?text=Hallo Lutfi! Saya ingin mengubah data reservasi atas nama ${rsvp.guest_name}. Kode undangan saya adalah ${rsvp.invitation_code}.">Lutfi</a> atau <a class="text-gold" target="_blank" href="https://wa.me/6282141002888?text=Hallo Vira! Saya ingin mengubah data reservasi atas nama ${rsvp.guest_name}. Kode undangan saya adalah ${rsvp.invitation_code}.">Vira</a>.
 </p>
 </div>`;
     append += rsvp.rsvp === "yes" ? yes : no;

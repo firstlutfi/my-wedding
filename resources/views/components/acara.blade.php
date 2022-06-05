@@ -87,8 +87,8 @@
                             @else
                             <p class="tw-text-center tw-font-bold tw-mt-1 tw-text-md sm:tw-text-base md:tw-text-base" style="font-size: 16px !important;">Kota Surabaya, Jawa Timur</p>
                             <blockquote class="tw-mt-3 tw-py-2 tw-px-2 sidekick">
-                                Sehubungan dengan situasi pandemi yang belum sepenuhnya berakhir dan sesuai dengan peraturan Pemkot Surabaya tentang PPKM, kami memutuskan untuk membatasi jumlah tamu undangan yang hadir.
-                                Mohon maaf yang sebesar-besarnya jika kami belum bisa mengundang seluruh rekan-rekan ataupun saudara/i di hari bahagia ini.
+                                Dikarenakan keterbatasan kami dalam menempuh jarak dan waktu serta kendala kapasitas di lokasi acara, kami terpaksa harus membatasi jumlah tamu undangan yang hadir.
+                                Mohon maaf yang sebesar-besarnya jika kami belum bisa mengundang seluruh rekan-rekan dan saudara/i di hari bahagia ini.
                                 <br> Tapi jangan khawatir, prosesi pernikahan kami juga bisa disaksikan melalui layanan livestream di bawah.
                             </blockquote>
                             <iframe width="100%" class="tw-mt-5 tw-aspect-video" src="https://www.youtube.com/embed/gHgX6zPu23E" title="Livestream wedding Lutfi & Vira" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="tw-mt-5"></iframe>
