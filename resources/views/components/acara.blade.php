@@ -64,19 +64,19 @@
                                 <div class="tw-grid tw-grid-cols-2 tw-gap-4">
                                     <div>
                                         <img src="/images/protocol/protocol-2.png" width="85" class="tw-h-auto tw-mx-auto" alt="Sehat">
-                                        <p class="tw-text-center tw-text-base sm:tw-text-xl tw-font-semibold tw-break-words">Pastikan anda dalam kondisi sehat</p>
+                                        <p class="tw-text-center tw-text-base tw-font-semibold tw-break-words">Pastikan anda dalam kondisi sehat</p>
                                     </div>
                                     <div>
                                         <img src="/images/protocol/protocol-4.png" width="85" class="tw-h-auto tw-mx-auto" alt="Mencuci Tangan">
-                                        <p class="tw-text-center tw-text-base sm:tw-text-xl tw-font-semibold tw-break-words">Mencuci tangan menggunakan hand sanitizer atau air + sabun</p>
+                                        <p class="tw-text-center tw-text-base tw-font-semibold tw-break-words">Mencuci tangan menggunakan hand sanitizer atau air + sabun</p>
                                     </div>
                                     <div>
                                         <img src="/images/protocol/protocol-1.png" width="85" class="tw-h-auto tw-mx-auto" alt="Masker">
-                                        <p class="tw-text-center tw-text-base sm:tw-text-xl tw-font-semibold tw-break-words">Menggunakan masker</p>
+                                        <p class="tw-text-center tw-text-base tw-font-semibold tw-break-words">Menggunakan masker</p>
                                     </div>
                                     <div>
                                         <img src="/images/protocol/protocol-3.png" width="85" class="tw-h-auto tw-mx-auto" alt="Physical Distancing">
-                                        <p class="tw-text-center tw-text-base sm:tw-text-xl tw-font-semibold tw-break-words">Menjaga jarak</p>
+                                        <p class="tw-text-center tw-text-base tw-font-semibold tw-break-words">Menjaga jarak</p>
                                     </div>
                                 </div>
                             </div>
