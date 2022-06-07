@@ -1,7 +1,7 @@
 <section>
     <div>
         <audio id="music" loop>
-            <source src="/music/amin-paling-serius.mp3" type="audio/mp3">
+            <source src="/music/kenny-g-forever-in-love.mp3" type="audio/mp3">
         </audio>
     </div>
     <div>
