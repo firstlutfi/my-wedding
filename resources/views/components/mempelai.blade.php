@@ -14,7 +14,7 @@
         <hr class="divider">
         <div class="couple-wrap tw-mt-10">
             <div class="couple-half">
-                <div class="groom"><img src="/images/cpw-square.png" alt="groom" class="img-responsive" loading="lazy"></div>
+                <div class="groom"><img src="/images/cpw-new.png" alt="groom" class="img-responsive" loading="lazy"></div>
                 <div class="desc-groom tw-my-auto">
                     <h3 class="m-name tw-text-3xl md:tw-text-4xl text-gold ">Ervira Wulandari</h3>
                     <p class="tw-text-sm md:tw-text-base tw-font-semibold">Putri pertama Bapak Ir. Ermandaru<br>&amp; Ibu Evi Yulianti, S.E</p>
@@ -22,7 +22,7 @@
             </div>
             <p class="heart tw-text-center"><i class="fa-solid fa-heart heart-pulse"></i></p>
             <div class="couple-half">
-                <div class="bride"><img src="/images/cpp-square.png" alt="groom" class="img-responsive" loading="lazy"></div>
+                <div class="bride"><img src="/images/cpp-new.png" alt="groom" class="img-responsive" loading="lazy"></div>
                 <div class="desc-bride tw-my-auto">
                     <h3 class="m-name tw-text-3xl md:tw-text-4xl text-gold">Lutfi Fitroh Hadi</h3>
                     <p class="tw-text-sm md:tw-text-base tw-font-semibold">Putra ketiga Bapak (Alm.) Drs. Mohamad Djaeni<br>&amp; Ibu Rana Yasmina Rosliany, S.P</p>

@@ -6,42 +6,42 @@
         <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid" uk-grid="" uk-lightbox="animation: slide">
             <div class="uk-first-column">
                 <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/gallery-1.jpg">
-                    <img class="thumb-gallery" src="/images/gallery/gallery-1.jpg" alt="Our Prawedding Photo">
+                    <img class="thumb-gallery" src="/images/gallery/gallery-1.jpg" alt="Prewedding Photo 1">
                 </a>
             </div>
             <div>
                 <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/gallery-2.jpg">
-                    <img class="thumb-gallery" src="/images/gallery/gallery-2.jpg" alt="Our Prawedding Photo">
+                    <img class="thumb-gallery" src="/images/gallery/gallery-2.jpg" alt="Prewedding Photo 2">
                 </a>
             </div>
             <div class="uk-grid-margin uk-first-column">
                 <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/gallery-3.jpg">
-                    <img class="thumb-gallery" src="/images/gallery/gallery-3.jpg" alt="Our Prawedding Photo">
+                    <img class="thumb-gallery" src="/images/gallery/gallery-3.jpg" alt="Prewedding Photo 3">
                 </a>
             </div>
             <div class="uk-grid-margin">
                 <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/gallery-6.jpg">
-                    <img class="thumb-gallery" src="/images/gallery/gallery-6.jpg" alt="Our Prawedding Photo">
+                    <img class="thumb-gallery" src="/images/gallery/gallery-6.jpg" alt="Prewedding Photo 4">
                 </a>
             </div>
             <div class="uk-grid-margin uk-first-column">
                 <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/gallery-4.jpg">
-                    <img class="thumb-gallery" src="/images/gallery/gallery-4.jpg" alt="Our Prawedding Photo">
+                    <img class="thumb-gallery" src="/images/gallery/gallery-4.jpg" alt="Prewedding Photo 5">
                 </a>
             </div>
             <div class="uk-grid-margin">
                 <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/gallery-5.jpg">
-                    <img class="thumb-gallery" src="/images/gallery/gallery-5.jpg" alt="Our Prawedding Photo">
-                </a>
-            </div>
-            <div class="uk-grid-margin uk-first-column">
-                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/gallery-7.jpg">
-                    <img class="thumb-gallery" src="/images/gallery/gallery-7-thumb.jpg" alt="Our Prawedding Photo">
+                    <img class="thumb-gallery" src="/images/gallery/gallery-5.jpg" alt="Prewedding Photo 6">
                 </a>
             </div>
             <div class="uk-grid-margin">
+                <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/gallery-7.jpg">
+                    <img class="thumb-gallery" src="/images/gallery/gallery-7.jpg" alt="Prewedding Photo 7">
+                </a>
+            </div>
+            <div class="uk-grid-margin uk-first-column">
                 <a class="uk-inline yn-anim uk-scrollspy-inview " href="/images/gallery/gallery-8.jpg">
-                    <img class="thumb-gallery" src="/images/gallery/gallery-8.jpg" alt="Our Prawedding Photo">
+                    <img class="thumb-gallery" src="/images/gallery/gallery-8-thumb.jpg" alt="Prewedding Photo 8">
                 </a>
             </div>
         </div>
