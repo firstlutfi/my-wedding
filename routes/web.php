@@ -19,6 +19,7 @@ Route::post('rsvp', 'GuestListController@rsvp');
 Route::post('comments', 'CommentsController@store');
 Route::get('/guest-list', 'DashboardController@getGuestList')->name('guests.index');
 
+
 Auth::routes();
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('guest/{invitation_code}', 'GuestListController@getUserData');

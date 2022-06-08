@@ -6,6 +6,9 @@ use App\Models\GuestList;
 use App\Models\Comments;
 use Illuminate\Http\Request;
 use App\Helpers\UtilityHelper;
+use App\Mail\Rsvp;
+use Illuminate\Support\Facades\Mail;
+use App\Jobs\SendEmailNotification;
 
 class GuestListController extends Controller
 {
@@ -44,6 +47,7 @@ class GuestListController extends Controller
             $fetchLatestComment = Comments::find($comment->id);
             $response['data']['rsvp'] = $rsvp;
             $response['data']['comment'] = $fetchLatestComment;
+            $response['data']['email'] = $this->sendMail($rsvp);
         } catch (\Throwable $th) {
             $response['errors'] = $th->getMessage();
         } finally {
@@ -88,4 +92,25 @@ class GuestListController extends Controller
 
         return json_encode($guest);
     }
+
+    public function sendMail($data){
+
+    try {
+        $emailJobs = new SendEmailNotification($data);
+        $this->dispatch($emailJobs);
+        return 
+            [
+                'success' => true, 
+                'message' => "Email notification added to queue!"
+            ]
+        ;
+    } catch (\Throwable $th) {
+        return 
+            [
+                'success' => false, 
+                'message' => $th->getMessage()
+            ]
+        ;
+    }
+}
 }
