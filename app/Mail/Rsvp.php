@@ -28,7 +28,7 @@ class Rsvp extends Mailable
      */
     public function build()
     {
-        return $this->subject('You have new RSVP!')
+        return $this->subject("You have new RSVP from {$this->data['guest_name']}!")
                 ->markdown('emails.rsvp')
                 ->with([
                     'guest_name' => $this->data['guest_name'],
