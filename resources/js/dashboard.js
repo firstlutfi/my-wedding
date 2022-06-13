@@ -41,6 +41,7 @@ $(document).ready(function () {
                     : _.capitalize(data.rsvp)
             );
             $("#static-invitation-code").val(data.invitation_code);
+            $("#static-qr-code").attr('src', `data:image/png;base64,${data.qr_code}`);
             $("#modal-view").modal();
         });
     });

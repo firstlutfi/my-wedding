@@ -142,6 +142,12 @@
                             <input type="text" readonly class="form-control-plaintext" id="static-enable-edit-name">
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label for="staticQrCode" class="col-sm-4 col-form-label font-weight-bold">QR Code</label>
+                        <div class="col-sm-8">
+                            <img id="static-qr-code" src="" alt="barcode"/>
+                        </div>
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">

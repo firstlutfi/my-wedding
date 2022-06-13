@@ -24,12 +24,13 @@ class GuestListController extends Controller
 
     public function store(Request $request)
     {
+        $invitation_code = UtilityHelper::generateInvitationCode();
         $guest = GuestList::create([
-            'invitation_code' => UtilityHelper::generateInvitationCode(),
+            'invitation_code' => $invitation_code,
             'guest_name' => $request->guest_name,
             'attendance_type' => $request->attendance_type,
             'max_attendance' => $request->max_attendance,
-            'enable_edit_name' => $request->enable_edit_name == null ? '0' : strval($request->enable_edit_name)
+            'enable_edit_name' => $request->enable_edit_name == null ? '0' : strval($request->enable_edit_name),
         ]);
 
         return $guest;
