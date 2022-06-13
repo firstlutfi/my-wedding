@@ -30,7 +30,7 @@ class GuestList extends Model
 
     public function getQrCodeAttribute()
     {
-        return DNS2D::getBarcodePNG("https://lutfiandvira.wedding/{$this->attributes['invitation_code']}", 'QRCODE', 7,7);
+        return DNS2D::getBarcodePNG("https://lutfiandvira.wedding/?invitation_code={$this->attributes['invitation_code']}", 'QRCODE', 7,7);
     }
 
     // public function getCommentAttribute($value)
