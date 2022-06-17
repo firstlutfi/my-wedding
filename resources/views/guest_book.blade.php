@@ -56,16 +56,36 @@
 </head>
 
 <body>
-    <div id="root" class="uk-container uk-container-small">
-        <div class="uk-card uk-card-default uk-margin-top uk-card-body uk-align-center uk-width-2-3@m">
-            <form>
-                <fieldset class="uk-fieldset">
-                    <div class="uk-margin">
-                        <div class="uk-form-label tw-text-left">Enter Invitation Code :</div>
-                        <input type="text" class="uk-input guestbook-form" id="input-invitation-code" required>
+    <div id="root" class="uk-container">
+        <div class="uk-card uk-card-default uk-margin-top uk-card-body uk-align-center">
+            <div id="qr-reader"></div>
+        </div>
+    </div>
+
+    <div id="modal-guest-book" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <form class="uk-form-horizontal uk-margin-large">
+                <legend class="uk-legend">Guest Book</legend>
+                <input class="uk-input" id="guest-book-invitation-code" type="hidden" disabled>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="guest-book-name">Guest Name</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input guestbook-form" id="guest-book-name" type="text" disabled>
                     </div>
-                </fieldset>
-                <button class="bg-gold tw-text-black tw-text-sm tw-w-full tw-p-2 tw-rounded-lg hover:tw-shadow-md" aria-expanded="true" id="check-invitation-code" onclick="event.preventDefault();checkInvitationCode();">Submit</button>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="guest-book-number-of-attendance">Number of Attendance</label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select guestbook-form" id="guest-book-number-of-attendance">
+                        </select>
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="guest-book-address">Address</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input guestbook-form" id="guest-book-address" type="text">
+                    </div>
+                </div>
             </form>
         </div>
     </div>
@@ -75,5 +95,7 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
-<script src="{{ mix('js/app.js') }}"></script>
+<script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+<script src="{{ mix('js/guest_book.js') }}"></script>
+
 </html>

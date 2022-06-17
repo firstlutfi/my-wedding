@@ -1006,3 +1006,7 @@ button.btn-main:disabled {
 .uk-notification-top-right{
     box-shadow: 5px 5px rgb(221 169 80 / 50%);
 }
+
+#qr-reader__dashboard_section_swaplink{
+    display: none;
+}

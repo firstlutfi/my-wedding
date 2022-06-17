@@ -16,7 +16,7 @@ class HomeController extends Controller
         }
         
         if (empty(GuestList::find($request->invitation_code))) {
-            return abort(404, "Invalid invitation code.<br>Check for typos, or ask the bride and groom for your invitation code.");
+            return abort(404, "Invalid invitation code.<br>Check for typos, or ask the bride / groom for your invitation code.");
         }
         $guest = GuestList::find($request->invitation_code);
         $comments = Comments::latest()->paginate(10);

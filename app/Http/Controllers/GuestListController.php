@@ -113,5 +113,9 @@ class GuestListController extends Controller
             ]
         ;
     }
+    }
+public function guestBook(){
+    return view('guest_book');
 }
+
 }

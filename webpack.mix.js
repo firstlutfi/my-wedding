@@ -13,6 +13,7 @@ const mix = require("laravel-mix");
 
 mix.js("resources/js/app.js", "public/js/app.js")
     .js("resources/js/dashboard.js", "public/js/dashboard.js")
+    .js("resources/js/guest_book.js", "public/js/guest_book.js")
     .postCss("resources/css/tailwind.css", "public/css")
     .postCss("resources/css/invitation-dark.css", "public/css")
     .sass("resources/sass/app.scss", "public/css")

@@ -490,7 +490,7 @@
                 <div class="w-16 h-1 bg-purple-light my-3 md:my-6"></div>
 
                 <p class="text-grey-darker text-2xl md:text-3xl font-light mb-8 leading-normal">
-                    {!!$exception->getMessage()!!}
+                    {!! $exception->getMessage() == null ? "Invalid invitation code.<br>Check for typos, or ask the bride / groom for your invitation code." : $exception->getMessage() !!}
                 </p>
             </div>
         </div>
