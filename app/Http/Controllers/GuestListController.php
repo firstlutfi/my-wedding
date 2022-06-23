@@ -9,6 +9,8 @@ use App\Helpers\UtilityHelper;
 use App\Mail\Rsvp;
 use Illuminate\Support\Facades\Mail;
 use App\Jobs\SendEmailNotification;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\GuestListImport;
 
 class GuestListController extends Controller
 {
@@ -36,7 +38,8 @@ class GuestListController extends Controller
         return $guest;
     }
 
-    public function rsvp(Request $request){
+    public function rsvp(Request $request)
+    {
         $rsvp = GuestList::find($request->invitation_code);
         $response = [];
         try {
@@ -54,7 +57,6 @@ class GuestListController extends Controller
         } finally {
             return json_encode($response);
         }
-        
     }
 
     public function updateUserData(Request $request)
@@ -75,7 +77,7 @@ class GuestListController extends Controller
         } catch (\Throwable $th) {
             $response['errors'] = $th->getMessage();
         }
-        
+
         return json_encode($response);
     }
 
@@ -94,28 +96,47 @@ class GuestListController extends Controller
         return json_encode($guest);
     }
 
-    public function sendMail($data){
+    public function sendMail($data)
+    {
 
-    try {
-        $emailJobs = new SendEmailNotification($data);
-        $this->dispatch($emailJobs);
-        return 
-            [
-                'success' => true, 
-                'message' => "Email notification added to queue!"
-            ]
-        ;
-    } catch (\Throwable $th) {
-        return 
-            [
-                'success' => false, 
-                'message' => $th->getMessage()
-            ]
-        ;
+        try {
+            $emailJobs = new SendEmailNotification($data);
+            $this->dispatch($emailJobs);
+            return
+                [
+                    'success' => true,
+                    'message' => "Email notification added to queue!"
+                ];
+        } catch (\Throwable $th) {
+            return
+                [
+                    'success' => false,
+                    'message' => $th->getMessage()
+                ];
+        }
     }
-    }
-public function guestBook(){
-    return view('guest_book');
-}
 
+    public function guestBook()
+    {
+        return view('guest_book');
+    }
+
+    public function importGuestList(Request $request)
+    {
+        // $file_location = storage_path('app/public') . '/Guest List.csv';
+        $response = [];
+
+        try {
+            if($request->clear_data == 'true'){
+                GuestList::truncate();
+            }
+            Excel::import(new GuestListImport, $request->file('image'));
+            $response['import'] = 'success';
+            // $array = Excel::toArray(new GuestListImport, $file_location);
+        } catch (\Throwable $th) {
+           $response['errors'] = $th->getMessage();
+        }
+        
+        return $response;
+    }
 }

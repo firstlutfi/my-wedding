@@ -13,11 +13,12 @@ const Toast = Swal.mixin({
 });
 
 onScanSuccess = function(decodedText, decodedResult) {
+    console.log(`Code scanned = ${decodedText}`, decodedResult);
     let result = decodedText.match(/https:\/\/lutfiandvira\.wedding\/\?invitation_code=(.+)/);
     if (result){
         html5QrcodeScanner.pause(true);
         axios.get(`/guest/${result[1]}`).then(({ data }) => {
-            if (!data.hasOwnProperty("guest_name")){
+            if (!data.hasOwnProperty("guest_name") || data.attendance_type == 'online'){
                 Toast.fire({
                     icon: "error",
                     title: "Oops...",

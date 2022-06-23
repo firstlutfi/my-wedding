@@ -230,4 +230,50 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="modal-import" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Import From CSV</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="form-import" enctype="multipart/form-data" accept=".csv">
+                    <div class="form-group row" id="select-file-row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label">Select File</label>
+                        <div class="col-sm-8">
+                            <input type="file" name="file" class="form-control" id="input-file" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="checkbox" name="clear_data" id="input-clear-data">
+                            <label for="input-clear-data" class="col-form-label">Clear Old Data</label>
+                            <p class="text-danger"><i>*If you uncheck this option, your data might be duplicated.</i></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btn-import">Import</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-import-progress" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Import in progress</h5>
+      </div>
+      <div class="modal-body">
+        Your import is running. Do not close or refresh this page. It will refresh automatically after import has finished.
+      </div>
+    </div>
+  </div>
+</div>
 @endsection

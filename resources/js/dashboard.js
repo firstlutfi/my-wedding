@@ -13,18 +13,34 @@ $(document).ready(function () {
                     title: 'Add New Guest',
                     id: 'trigger-modal-create'
                 }
+            },
+            {
+                text: 'Import From CSV',
+                className: 'btn btn-primary',
+                attr:  {
+                    title: 'Import From CSV',
+                    id: 'trigger-modal-import'
+                }
             }
         ],
         language: {
             lengthMenu: "Show maximum _MENU_ rows",
         },
         initComplete: function(settings, json) {
+            if (process.env.MIX_ENABLE_IMPORT === true){
+                console.log('ini true');
+                $('#trigger-modal-import').removeClass('dt-button');    
+            }else{
+                console.log('ini false');
+                $('#trigger-modal-import').remove();    
+            }
+            
             $('#trigger-modal-create').removeClass('dt-button');
             $('.dt-buttons').addClass('float-right');
           }
     });
 
-    $(".trigger-modal-view").click(function () {
+    $("#guest-table tbody").on('click', 'tr .trigger-modal-view', function () {
         axios.get(`/guest/${$(this).data("code")}`).then(({ data }) => {
             $("#static-attendance-type").val(data.attendance_type);
             $("#static-enable-edit-name").val(
@@ -46,12 +62,11 @@ $(document).ready(function () {
         });
     });
 
-    $(".trigger-modal-edit").click(function () {
+    $("#guest-table tbody").on('click', 'tr .trigger-modal-edit', function () {
         axios.get(`/guest/${$(this).data("code")}`).then(({ data }) => {
             if (data.attendance_type == "offline") {
                 $("#input-attendance-type").val("offline").change();
                 $('#max-attendance-row').show();
-                $('#enable-edit-name-row').hide();
             } else {
                 $("#input-attendance-type").val("online").change();
                 $('#max-attendance-row').hide();
@@ -133,6 +148,32 @@ $(document).ready(function () {
         
     });
 
+    $("#btn-import").click(function () {
+        valid = document.getElementById('form-import').reportValidity();
+        if (valid) {
+            $("#modal-import").modal('toggle');
+            $("#modal-import-progress").modal();
+            var formData = new FormData();
+            var imagefile = $('#input-file').prop('files')[0];
+            formData.append("image", imagefile);
+            formData.append("clear_data", $("#input-clear-data").is(':checked'));
+            axios
+            .post('/import', formData, {
+                headers: {
+                  'Content-Type': 'multipart/form-data'
+                }
+            })
+            .then(({ data }) => {
+                if (data.hasOwnProperty('errors')){
+                    alert(data.errors);
+                }else{
+                    window.location.reload();
+                }
+            });
+        }
+        
+    });
+
     $("#trigger-modal-create").click(function () {
         $("#invitation-code-row").hide();
         $("#rsvp-row").hide();
@@ -140,6 +181,10 @@ $(document).ready(function () {
         $("#number-of-attendance-row").hide();
         $("#btn-update").hide();
         $("#modal-create-edit").modal();
+    });
+
+    $("#trigger-modal-import").click(function () {
+        $("#modal-import").modal();
     });
 
     $('#input-attendance-type').change(function (){
@@ -150,7 +195,6 @@ $(document).ready(function () {
             $('#input-number-of-attendance').val(0).change();
             $('#max-attendance-row').show();
             $('#input-max-attendance').attr({ min: 1 }).val(1);
-            $('#enable-edit-name-row').hide();
         } else {
             $('#rsvp-row').hide();
             $("#input-rsvp").val("-").change();
@@ -158,7 +202,6 @@ $(document).ready(function () {
             $('#input-number-of-attendance').val(0).change();
             $('#max-attendance-row').hide();
             $('#input-max-attendance').attr({ min: 0 }).val(0).change();
-            $('#enable-edit-name-row').show();
         }
     });
 
@@ -191,7 +234,7 @@ $(document).ready(function () {
         }
     });
 
-    $(".trigger-delete").click(function () {
+    $("#guest-table tbody").on('click', 'tr .trigger-delete', function () {
         let choice = confirm(`Are you sure want to delete guest with code ${$(this).data("code")}?`);
         if (choice) {
             axios.delete(`/guest/${$(this).data("code")}`).then(({ data }) => {
