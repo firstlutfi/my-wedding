@@ -29,7 +29,7 @@ class GuestListImport implements ToModel, WithHeadingRow
             'guest_name' => $row['guest_name'],
             'max_attendance' => $row['max_attendance'],
             'number_of_attendance' => 0,
-            'attendance_type' => $row['attendance_type'],
+            'attendance_type' => strtolower($row['attendance_type']),
             'enable_edit_name' => $row['enable_edit_name'] == null ? '0' : '1'
         ]);
     }
