@@ -27,11 +27,10 @@ $(document).ready(function () {
             lengthMenu: "Show maximum _MENU_ rows",
         },
         initComplete: function(settings, json) {
-            if (process.env.MIX_ENABLE_IMPORT === true){
-                console.log('ini true');
+            const enabled = process.env.MIX_ENABLE_IMPORT === 'true' ? true : false;
+            if (enabled){
                 $('#trigger-modal-import').removeClass('dt-button');    
             }else{
-                console.log('ini false');
                 $('#trigger-modal-import').remove();    
             }
             
