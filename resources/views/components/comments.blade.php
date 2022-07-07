@@ -3,7 +3,7 @@
         <h2 class="tw-text-5xl tw-mt-3 text-gold font-cookie tw-text-center tw-pt-10 uk-scrollspy-inview">
             Greetings Card </h2>
         <hr class="divider">
-        @if ($guest->have_comments == 0 || $guest->enable_edit_name == 1)
+        @if ($guest->have_comments == 0 && ($guest->attendance_type == 'online' || $guest->enable_edit_name == 1))
         <div class="uk-card uk-card-default uk-margin-top uk-card-body uk-align-center" id="comment-card">
             <form id="comment-form">
                 <fieldset class="uk-fieldset">
