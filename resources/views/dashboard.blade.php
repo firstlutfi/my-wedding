@@ -48,7 +48,7 @@
                 <div class="card-header">{{ __('Estimated Number Of Attendance') }}</div>
 
                 <div class="card-body">
-                    {{ $guest->sum('number_of_attendance') }}
+                    {{ $guest->where('rsvp','==','yes')->sum('number_of_attendance') }}
                 </div>
             </div>
         </div>
