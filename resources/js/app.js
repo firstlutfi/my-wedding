@@ -151,9 +151,15 @@ submitRsvp = function (code) {
                 {
                     invitation_code: code,
                     rsvp: document.getElementById("select-attendance").value,
-                    number_of_attendance: parseInt(
-                        document.getElementById("number-of-attendance").value
-                    ),
+                    number_of_attendance:
+                        document.getElementById("select-attendance").value ===
+                        "yes"
+                            ? parseInt(
+                                  document.getElementById(
+                                      "number-of-attendance"
+                                  ).value
+                              )
+                            : 0,
                     comment_text: document.getElementById("comment-box").value,
                 },
                 { element: "btn-rsvp" }
@@ -253,12 +259,16 @@ toggleAudio = function () {
     }
 };
 
-const button = document.getElementById('play-sound');
-button.addEventListener('click', function () {
-    // Start playing audio when the user clicks on the 'buka undangan' button
-    const audio = document.getElementById("music");
-    audio.play();
-}, true);
+const button = document.getElementById("play-sound");
+button.addEventListener(
+    "click",
+    function () {
+        // Start playing audio when the user clicks on the 'buka undangan' button
+        const audio = document.getElementById("music");
+        audio.play();
+    },
+    true
+);
 const modal = UIkit.modal("#my_id");
 modal.show();
 // UIkit.util.on("#my_id", "hidden", function () {

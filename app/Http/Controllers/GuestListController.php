@@ -43,7 +43,7 @@ class GuestListController extends Controller
         $rsvp = GuestList::find($request->invitation_code);
         $response = [];
         try {
-            $rsvp->update(['rsvp' => $request->rsvp, 'number_of_attendance' => $request->number_of_attendance]);
+            $rsvp->update(['rsvp' => $request->rsvp, 'number_of_attendance' => $request->rsvp == "yes" ? $request->number_of_attendance : 0]);
             $comment = Comments::create([
                 'comment_from' => $rsvp->guest_name,
                 'comment_text' => $request->comment_text
