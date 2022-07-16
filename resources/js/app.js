@@ -129,7 +129,8 @@ showRsvpResponse = function (rsvp) {
 };
 
 toggleJumlahTamu = function () {
-    document.getElementById("select-attendance").value === "yes"
+    document.querySelector('input[name="select-attendance"]:checked').value ===
+    "yes"
         ? (document.getElementById("jumlah-tamu").style.display = "block")
         : (document.getElementById("jumlah-tamu").style.display = "none");
 };
@@ -150,15 +151,10 @@ submitRsvp = function (code) {
                 "/rsvp",
                 {
                     invitation_code: code,
-                    rsvp: document.getElementById("select-attendance").value,
+                    rsvp: document.querySelector('input[name="select-attendance"]:checked').value,
                     number_of_attendance:
-                        document.getElementById("select-attendance").value ===
-                        "yes"
-                            ? parseInt(
-                                  document.getElementById(
-                                      "number-of-attendance"
-                                  ).value
-                              )
+                        document.querySelector('input[name="select-attendance"]:checked').value === "yes"
+                            ? parseInt(document.getElementById("number-of-attendance").value)
                             : 0,
                     comment_text: document.getElementById("comment-box").value,
                 },

@@ -11,10 +11,17 @@
 
                 <div class="uk-margin">
                     <div class="uk-form-label tw-text-left">Pilih Kehadiran :</div>
-                    <select class="uk-select guestbook-form" id="select-attendance" onchange="toggleJumlahTamu()" required>
+                    <div id="radio-holder" style="text-align: left">
+                        <input class="uk-checkbox" type="radio" id="radio-hadir" name="select-attendance" checked value="yes" onchange="toggleJumlahTamu()" required>
+                        <label for="radio-hadir">Berkenan hadir</label><br>
+                        <input class="uk-checkbox" type="radio" id="radio-tidak-hadir" name="select-attendance" value="no" onchange="toggleJumlahTamu()" required>
+                        <label for="radio-tidak-hadir">Maaf tidak bisa hadir</label><br>
+                    </div>
+
+                    <!-- <select class="uk-select guestbook-form" id="select-attendance" onchange="toggleJumlahTamu()" required>
                         <option value="yes">Berkenan hadir</option>
                         <option value="no">Maaf tidak bisa hadir</option>
-                    </select>
+                    </select> -->
                 </div>
 
                 <div class="uk-margin" id="jumlah-tamu">
@@ -25,7 +32,7 @@
                             @endfor
                     </select>
                     <div class="tw-text-left"><i class="tw-text-xs tw-text-red-500">*Anak-anak usia di bawah 5 tahun tidak perlu dihitung</i></div>
-                    
+
                 </div>
 
                 <div class="uk-margin">
