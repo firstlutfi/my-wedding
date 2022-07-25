@@ -114,7 +114,8 @@ showRsvpResponse = function (rsvp) {
     <div class="uk-margin-remove-top">
         <p class="tw-text-center tw-text-xl tw-text-black tw-font-bold tw-break-words">Yah, sayang sekali...</p>
         <p class="tw-text-center tw-text-base tw-text-black tw-break-words">
-            Tiada kesan tanpa kehadiranmu, <br>semoga kita bisa berjumpa di lain waktu.
+            Tiada kesan tanpa kehadiranmu, semoga kita bisa berjumpa di lain waktu.
+            <br>Tapi jangan khawatir, anda tetap bisa menyaksikan acara melalui livestreaming Youtube di bawah ini.
         </p>
     </div>
 </div>`;
@@ -126,6 +127,10 @@ showRsvpResponse = function (rsvp) {
 </div>`;
     append += rsvp.rsvp === "yes" ? yes : no;
     return append + bottomInfo;
+};
+
+insertYoutube = function () {
+    return '<iframe id="youtube-frame" width="100%" class="tw-mt-5 tw-aspect-video" src="https://www.youtube.com/embed/gHgX6zPu23E" title="Livestream wedding Lutfi & Vira" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="tw-mt-5"></iframe>';
 };
 
 toggleJumlahTamu = function () {
@@ -151,10 +156,18 @@ submitRsvp = function (code) {
                 "/rsvp",
                 {
                     invitation_code: code,
-                    rsvp: document.querySelector('input[name="select-attendance"]:checked').value,
+                    rsvp: document.querySelector(
+                        'input[name="select-attendance"]:checked'
+                    ).value,
                     number_of_attendance:
-                        document.querySelector('input[name="select-attendance"]:checked').value === "yes"
-                            ? parseInt(document.getElementById("number-of-attendance").value)
+                        document.querySelector(
+                            'input[name="select-attendance"]:checked'
+                        ).value === "yes"
+                            ? parseInt(
+                                  document.getElementById(
+                                      "number-of-attendance"
+                                  ).value
+                              )
                             : 0,
                     comment_text: document.getElementById("comment-box").value,
                 },
@@ -172,6 +185,9 @@ submitRsvp = function (code) {
                     document.getElementById("rsvp-form").remove();
                     document.getElementById("rsvp").innerHTML =
                         showRsvpResponse(data.data.rsvp);
+                    document
+                        .getElementById("rsvp-section")
+                        .insertAdjacentHTML("beforeend", insertYoutube());
                     newComment += appendComment(data.data.comment);
                     let commentList =
                         document.getElementById("comment-container");

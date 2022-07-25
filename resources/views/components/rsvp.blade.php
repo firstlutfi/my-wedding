@@ -1,4 +1,4 @@
-<section>
+<section id="rsvp-section">
     @if ($guest->rsvp == null)
     <div id="rsvp" class="uk-card uk-card-default uk-margin-top uk-card-body uk-align-center uk-width-2-3@m">
         <form id="rsvp-form" name="rsvp-form" method="post">
@@ -70,7 +70,8 @@
             <div class="uk-margin-remove-top">
                 <p class="tw-text-center tw-text-xl tw-text-black tw-font-bold tw-break-words">Yah, sayang sekali...</p>
                 <p class="tw-text-center tw-text-base tw-text-black tw-break-words">
-                    Tiada kesan tanpa kehadiranmu, <br>semoga kita bisa berjumpa di lain waktu.
+                    Tiada kesan tanpa kehadiranmu, semoga kita bisa berjumpa di lain waktu.
+                    <br>Tapi jangan khawatir, anda tetap bisa menyaksikan acara melalui livestreaming Youtube di bawah ini.
                 </p>
 
             </div>
@@ -82,5 +83,6 @@
             </p>
         </div>
     </div>
+    <iframe id="youtube-frame" width="100%" class="tw-mt-5 tw-aspect-video" src="https://www.youtube.com/embed/gHgX6zPu23E" title="Livestream wedding Lutfi & Vira" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="tw-mt-5"></iframe>
     @endif
 </section>
