@@ -80,9 +80,11 @@
                 @include('components.gallery')
             </div>
 
+            @if($guest->invitation_code != "rrEGG" && $guest->invitation_code != "hAUbv")
             <div id="gifts" style="background: rgba(0,0,0,.05);">
                 @include('components.gifts')
             </div>
+            @endif
 
             <div id="comments">
                 @include('components.comments')
